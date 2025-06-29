@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ground
+  - Enemy
+  - sword
+  - Trampoline
+  - Hazard
+  - Poison
+  - InstantKill
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Decorations
+  - Enemy
+  - Player
+  - Ground
+  - Background
+  - PostProcessing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 4241999135
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Decorations
+    uniqueID: 1309183093
+    locked: 0
+  - name: Characters
+    uniqueID: 1619557593
+    locked: 0
+  - name: Ground
+    uniqueID: 131747189
+    locked: 0
+  - name: Front Decorations
+    uniqueID: 1548250631
+    locked: 0
+  - name: frontMenu
+    uniqueID: 1092830599
+    locked: 0

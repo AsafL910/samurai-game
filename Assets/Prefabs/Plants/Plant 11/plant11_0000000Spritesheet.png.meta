@@ -1,0 +1,588 @@
+fileFormatVersion: 2
+guid: 05c4ff200933c684ea03c56bd986da50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 834484982604086714
+    second: plant11_0000000Spritesheet_0
+  - first:
+      213: 4081444286156949086
+    second: plant11_0000000Spritesheet_1
+  - first:
+      213: -4837545715929132331
+    second: plant11_0000000Spritesheet_2
+  - first:
+      213: -2888861383280219724
+    second: plant11_0000000Spritesheet_3
+  - first:
+      213: 6732419606561858871
+    second: plant11_0000000Spritesheet_4
+  - first:
+      213: 146387953587900590
+    second: plant11_0000000Spritesheet_5
+  - first:
+      213: -2592445631053848872
+    second: plant11_0000000Spritesheet_6
+  - first:
+      213: 7198195520220361795
+    second: plant11_0000000Spritesheet_7
+  - first:
+      213: -4766190710230474942
+    second: plant11_0000000Spritesheet_8
+  - first:
+      213: 6825069519645997286
+    second: plant11_0000000Spritesheet_9
+  - first:
+      213: 5314130273182571952
+    second: plant11_0000000Spritesheet_10
+  - first:
+      213: 5759574499673198213
+    second: plant11_0000000Spritesheet_11
+  - first:
+      213: 811595288794019874
+    second: plant11_0000000Spritesheet_12
+  - first:
+      213: 4159969882730441530
+    second: plant11_0000000Spritesheet_13
+  - first:
+      213: 3705156449560737340
+    second: plant11_0000000Spritesheet_14
+  - first:
+      213: 4123207206791957842
+    second: plant11_0000000Spritesheet_15
+  - first:
+      213: -2246869656485793762
+    second: plant11_0000000Spritesheet_16
+  - first:
+      213: -2902296543164853031
+    second: plant11_0000000Spritesheet_17
+  - first:
+      213: 4135660515768178430
+    second: plant11_0000000Spritesheet_18
+  - first:
+      213: 4689499447414279746
+    second: plant11_0000000Spritesheet_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1690
+        width: 331
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdb38e9bafa49b00800000000000000
+      internalID: 834484982604086714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1690
+        width: 331
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56ceee24f334a830800000000000000
+      internalID: 4081444286156949086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1691
+        width: 330
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2d4514dc59ddcb0800000000000000
+      internalID: -4837545715929132331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1691
+        width: 328
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b92d34b0e3b8e7d0800000000000000
+      internalID: -2888861383280219724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 1688
+        width: 327
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735aef756fb5e6d50800000000000000
+      internalID: 6732419606561858871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1174
+        width: 327
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0d0057113180200800000000000000
+      internalID: 146387953587900590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1174
+        width: 326
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de95851f68c50cd0800000000000000
+      internalID: -2592445631053848872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1174
+        width: 324
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344fa8e10b025e360800000000000000
+      internalID: 7198195520220361795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1176
+        width: 324
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f12f82dc61bddb0800000000000000
+      internalID: -4766190710230474942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 1175
+        width: 327
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e878dd319487be50800000000000000
+      internalID: 6825069519645997286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 659
+        width: 323
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd5237f3559fb940800000000000000
+      internalID: 5314130273182571952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 659
+        width: 323
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e4b6eed7e1eef40800000000000000
+      internalID: 5759574499673198213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 659
+        width: 322
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228b2f97d9d534b00800000000000000
+      internalID: 811595288794019874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 659
+        width: 322
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ba870619e2bb930800000000000000
+      internalID: 4159969882730441530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 663
+        width: 330
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36b05df82c5b6330800000000000000
+      internalID: 3705156449560737340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 144
+        width: 323
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d4a20eb13983930800000000000000
+      internalID: 4123207206791957842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 148
+        width: 324
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e107f8ca3f381d0e0800000000000000
+      internalID: -2246869656485793762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 146
+        width: 324
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d490d7cba8f8b7d0800000000000000
+      internalID: -2902296543164853031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 146
+        width: 326
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef698f1d351d46930800000000000000
+      internalID: 4135660515768178430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant11_0000000Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 148
+        width: 330
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ec481c6e2741140800000000000000
+      internalID: 4689499447414279746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

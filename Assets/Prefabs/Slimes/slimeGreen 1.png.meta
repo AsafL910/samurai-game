@@ -1,0 +1,828 @@
+fileFormatVersion: 2
+guid: 9c17a709fa128f64d9d6732afa7c02f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3211810621207689254
+    second: slimeGreen_0
+  - first:
+      213: -1919240238154806311
+    second: slimeGreen_1
+  - first:
+      213: -8435546371847097797
+    second: slimeGreen_2
+  - first:
+      213: 4806608555696531029
+    second: slimeGreen_3
+  - first:
+      213: 512415582412104136
+    second: slimeGreen_4
+  - first:
+      213: 7128222807608621223
+    second: slimeGreen_5
+  - first:
+      213: 8647254795800531264
+    second: slimeGreen_6
+  - first:
+      213: -2884634216353552480
+    second: slimeGreen_7
+  - first:
+      213: -5731304948554808299
+    second: slimeGreen_8
+  - first:
+      213: -8025955152203399689
+    second: slimeGreen_9
+  - first:
+      213: -2122982115885370485
+    second: slimeGreen_10
+  - first:
+      213: -2274892865367220853
+    second: slimeGreen_11
+  - first:
+      213: -7280173101122007058
+    second: slimeGreen_12
+  - first:
+      213: -3574017501581648085
+    second: slimeGreen_13
+  - first:
+      213: 4936996001580413219
+    second: slimeGreen_14
+  - first:
+      213: -5634137231652023955
+    second: slimeGreen_15
+  - first:
+      213: -7860561587641960082
+    second: slimeGreen_16
+  - first:
+      213: 68707379884398717
+    second: slimeGreen_17
+  - first:
+      213: -4840640629918061007
+    second: slimeGreen_18
+  - first:
+      213: 6478442521514556275
+    second: slimeGreen_19
+  - first:
+      213: 6339290951331143917
+    second: slimeGreen_20
+  - first:
+      213: -7624148975452517980
+    second: slimeGreen_21
+  - first:
+      213: -1790722978305927938
+    second: slimeGreen_22
+  - first:
+      213: -5586797619320124649
+    second: slimeGreen_23
+  - first:
+      213: 4072733429914104194
+    second: slimeGreen_24
+  - first:
+      213: 7580440861527227282
+    second: slimeGreen_25
+  - first:
+      213: 2644091564439704054
+    second: slimeGreen_26
+  - first:
+      213: 1526986285379715163
+    second: slimeGreen_27
+  - first:
+      213: 6710568324371024684
+    second: slimeGreen_28
+  - first:
+      213: -7523573908020003873
+    second: slimeGreen_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slimeGreen_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1317
+        width: 304
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7c615c14b5d63d0800000000000000
+      internalID: -3211810621207689254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_1
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1317
+        width: 300
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db85260c2d7d55e0800000000000000
+      internalID: -1919240238154806311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_2
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1317
+        width: 296
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32f7bba44beeea80800000000000000
+      internalID: -8435546371847097797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_3
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 1317
+        width: 292
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55625a0d30184b240800000000000000
+      internalID: 4806608555696531029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_4
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 1317
+        width: 278
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c16c0fd1477c1700800000000000000
+      internalID: 512415582412104136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1060
+        width: 288
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8795760e88ce260800000000000000
+      internalID: 7128222807608621223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1060
+        width: 284
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041dbf1fb68310870800000000000000
+      internalID: 8647254795800531264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_7
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1060
+        width: 280
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a72f43b678b7f7d0800000000000000
+      internalID: -2884634216353552480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_8
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1060
+        width: 276
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514c3f9d3805670b0800000000000000
+      internalID: -5731304948554808299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_9
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1059
+        width: 282
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd33b9ff441e9090800000000000000
+      internalID: -8025955152203399689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 802
+        width: 272
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83352e7307a982e0800000000000000
+      internalID: -2122982115885370485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_11
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 802
+        width: 268
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d57b9edf4fd60e0800000000000000
+      internalID: -2274892865367220853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_12
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 802
+        width: 264
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefc444f221a7fa90800000000000000
+      internalID: -7280173101122007058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_13
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 802
+        width: 262
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f523da40a866ec0800000000000000
+      internalID: -3574017501581648085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_14
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 801
+        width: 286
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32179b3c4bbb38440800000000000000
+      internalID: 4936996001580413219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_15
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 544
+        width: 260
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61149be9068fc1b0800000000000000
+      internalID: -5634137231652023955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_16
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 544
+        width: 258
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69358112eca9e290800000000000000
+      internalID: -7860561587641960082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_17
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 544
+        width: 256
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78157b7ff814f000800000000000000
+      internalID: 68707379884398717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_18
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 544
+        width: 256
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e29607ef692dcb0800000000000000
+      internalID: -4840640629918061007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_19
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 543
+        width: 292
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b39a8262d08e950800000000000000
+      internalID: 6478442521514556275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_20
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 285
+        width: 256
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0e0f1888fa9f750800000000000000
+      internalID: 6339290951331143917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_21
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 285
+        width: 256
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a98e7bb6e4913690800000000000000
+      internalID: -7624148975452517980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_22
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 285
+        width: 258
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef412fa50f21627e0800000000000000
+      internalID: -1790722978305927938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_23
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 285
+        width: 262
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b0d645a25b772b0800000000000000
+      internalID: -5586797619320124649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_24
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 285
+        width: 296
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28173eae971458830800000000000000
+      internalID: 4072733429914104194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_25
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 27
+        width: 264
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bbf28fcc2233960800000000000000
+      internalID: 7580440861527227282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_26
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 27
+        width: 268
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f11904d443b1b420800000000000000
+      internalID: 2644091564439704054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_27
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 27
+        width: 270
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5083fcafe1f03510800000000000000
+      internalID: 1526986285379715163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_28
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 27
+        width: 274
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b8f1f365ab02d50800000000000000
+      internalID: 6710568324371024684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeGreen_29
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 27
+        width: 300
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbf11b6465e69790800000000000000
+      internalID: -7523573908020003873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

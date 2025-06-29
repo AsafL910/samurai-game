@@ -1,0 +1,1080 @@
+fileFormatVersion: 2
+guid: 825e9d17663353f4e8f4222bd6eb9a74
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5067213510316874012
+    second: plant2_cave_0
+  - first:
+      213: -439368584622491056
+    second: plant2_cave_1
+  - first:
+      213: 6868830058937115540
+    second: plant2_cave_2
+  - first:
+      213: -1973095777106656069
+    second: plant2_cave_3
+  - first:
+      213: 7740783012189220364
+    second: plant2_cave_4
+  - first:
+      213: -5183174159308513615
+    second: plant2_cave_5
+  - first:
+      213: -1567219356415063015
+    second: plant2_cave_6
+  - first:
+      213: 3768599037376375464
+    second: plant2_cave_7
+  - first:
+      213: 2390475591764466851
+    second: plant2_cave_8
+  - first:
+      213: 5403545673141633438
+    second: plant2_cave_9
+  - first:
+      213: 314217831741472022
+    second: plant2_cave_10
+  - first:
+      213: -1744578413952507882
+    second: plant2_cave_11
+  - first:
+      213: -4011128774989577600
+    second: plant2_cave_12
+  - first:
+      213: 1310561072920485276
+    second: plant2_cave_13
+  - first:
+      213: 7879759213105922795
+    second: plant2_cave_14
+  - first:
+      213: -3588215835972881585
+    second: plant2_cave_15
+  - first:
+      213: -9073247656559834494
+    second: plant2_cave_16
+  - first:
+      213: 6790704318150601621
+    second: plant2_cave_17
+  - first:
+      213: -1483741870766683837
+    second: plant2_cave_18
+  - first:
+      213: -4093157066294677330
+    second: plant2_cave_19
+  - first:
+      213: 7537420372640783398
+    second: plant2_cave_20
+  - first:
+      213: 303318304327455059
+    second: plant2_cave_21
+  - first:
+      213: -6313854001489046653
+    second: plant2_cave_22
+  - first:
+      213: 8592433820261716295
+    second: plant2_cave_23
+  - first:
+      213: -6998899190314917909
+    second: plant2_cave_24
+  - first:
+      213: 8118342595790524122
+    second: plant2_cave_25
+  - first:
+      213: 9024175143339056476
+    second: plant2_cave_26
+  - first:
+      213: 3182709153364465786
+    second: plant2_cave_27
+  - first:
+      213: -1304999081101638157
+    second: plant2_cave_28
+  - first:
+      213: -7767773503714522527
+    second: plant2_cave_29
+  - first:
+      213: 5116945636853386402
+    second: plant2_cave_30
+  - first:
+      213: -6206320525082554548
+    second: plant2_cave_31
+  - first:
+      213: -6726555495522524903
+    second: plant2_cave_32
+  - first:
+      213: 369915150739159214
+    second: plant2_cave_33
+  - first:
+      213: -2253368923220669127
+    second: plant2_cave_34
+  - first:
+      213: 5692720010234493016
+    second: plant2_cave_35
+  - first:
+      213: -1021504896552455338
+    second: plant2_cave_36
+  - first:
+      213: 695129480170883906
+    second: plant2_cave_37
+  - first:
+      213: -5953906911325922216
+    second: plant2_cave_38
+  - first:
+      213: 8011175131477669932
+    second: plant2_cave_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plant2_cave_0
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 5244
+        width: 682
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c195f7327db525640800000000000000
+      internalID: 5067213510316874012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_1
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 5244
+        width: 685
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a3c14a99c07e9f0800000000000000
+      internalID: -439368584622491056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_2
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 5244
+        width: 686
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493e875cb8cf25f50800000000000000
+      internalID: 6868830058937115540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_3
+      rect:
+        serializedVersion: 2
+        x: 3299
+        y: 5244
+        width: 689
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb40cb938d72e94e0800000000000000
+      internalID: -1973095777106656069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_4
+      rect:
+        serializedVersion: 2
+        x: 4331
+        y: 5244
+        width: 693
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0eaaec1329cc6b60800000000000000
+      internalID: 7740783012189220364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_5
+      rect:
+        serializedVersion: 2
+        x: 5367
+        y: 5244
+        width: 692
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be9e61509aa118b0800000000000000
+      internalID: -5183174159308513615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_6
+      rect:
+        serializedVersion: 2
+        x: 6399
+        y: 5244
+        width: 692
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c83cf7c4e104ae0800000000000000
+      internalID: -1567219356415063015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 4212
+        width: 699
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aaa2bb8bd0cc4430800000000000000
+      internalID: 3768599037376375464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_8
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 4212
+        width: 703
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acdc5ba2ecac2120800000000000000
+      internalID: 2390475591764466851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_9
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 4212
+        width: 709
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91c43719204dfa40800000000000000
+      internalID: 5403545673141633438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_10
+      rect:
+        serializedVersion: 2
+        x: 3292
+        y: 4212
+        width: 713
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d3b0304735c5400800000000000000
+      internalID: 314217831741472022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_11
+      rect:
+        serializedVersion: 2
+        x: 4324
+        y: 4212
+        width: 717
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610eb89fc230ac7e0800000000000000
+      internalID: -1744578413952507882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_12
+      rect:
+        serializedVersion: 2
+        x: 5356
+        y: 4212
+        width: 724
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082066a81ab9558c0800000000000000
+      internalID: -4011128774989577600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_13
+      rect:
+        serializedVersion: 2
+        x: 6402
+        y: 4212
+        width: 686
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d51e72a5c003210800000000000000
+      internalID: 1310561072920485276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_14
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 3176
+        width: 731
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be24acc61478a5d60800000000000000
+      internalID: 7879759213105922795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_15
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 3176
+        width: 735
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43b76755b8143ec0800000000000000
+      internalID: -3588215835972881585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_16
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3176
+        width: 738
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a0b971459551280800000000000000
+      internalID: -9073247656559834494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_17
+      rect:
+        serializedVersion: 2
+        x: 3282
+        y: 3176
+        width: 742
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59be312499d6d3e50800000000000000
+      internalID: 6790704318150601621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_18
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 3176
+        width: 745
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349049631a0b86be0800000000000000
+      internalID: -1483741870766683837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_19
+      rect:
+        serializedVersion: 2
+        x: 5346
+        y: 3176
+        width: 749
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea030ada55f2237c0800000000000000
+      internalID: -4093157066294677330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_20
+      rect:
+        serializedVersion: 2
+        x: 6402
+        y: 3176
+        width: 686
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cdb0ad4eb4a9860800000000000000
+      internalID: 7537420372640783398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 2144
+        width: 753
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351df47046a953400800000000000000
+      internalID: 303318304327455059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_22
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 2144
+        width: 753
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3831195ec3fa068a0800000000000000
+      internalID: -6313854001489046653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_23
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 2144
+        width: 752
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74190cce8057e3770800000000000000
+      internalID: 8592433820261716295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_24
+      rect:
+        serializedVersion: 2
+        x: 3278
+        y: 2144
+        width: 753
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef9286a44aeede90800000000000000
+      internalID: -6998899190314917909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_25
+      rect:
+        serializedVersion: 2
+        x: 4312
+        y: 2144
+        width: 751
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade440bf3952aa070800000000000000
+      internalID: 8118342595790524122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_26
+      rect:
+        serializedVersion: 2
+        x: 5346
+        y: 2144
+        width: 749
+        height: 904
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d52a11b7f4c3d70800000000000000
+      internalID: 9024175143339056476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_27
+      rect:
+        serializedVersion: 2
+        x: 6402
+        y: 2144
+        width: 686
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a785cadbc114b2c20800000000000000
+      internalID: 3182709153364465786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_28
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1108
+        width: 746
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5c9baff36b3ede0800000000000000
+      internalID: -1304999081101638157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_29
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1108
+        width: 742
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a876f5723533490800000000000000
+      internalID: -7767773503714522527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_30
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1108
+        width: 738
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac81ab22fa030740800000000000000
+      internalID: 5116945636853386402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_31
+      rect:
+        serializedVersion: 2
+        x: 3285
+        y: 1108
+        width: 732
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f0d3c6d58bed9a0800000000000000
+      internalID: -6206320525082554548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_32
+      rect:
+        serializedVersion: 2
+        x: 4321
+        y: 1108
+        width: 728
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911ad676a6976a2a0800000000000000
+      internalID: -6726555495522524903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_33
+      rect:
+        serializedVersion: 2
+        x: 5356
+        y: 1108
+        width: 724
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8b7d4aed3322500800000000000000
+      internalID: 369915150739159214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_34
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 76
+        width: 720
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d078737ec6ab0e0800000000000000
+      internalID: -2253368923220669127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_35
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 76
+        width: 714
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858f8cf10ba900f40800000000000000
+      internalID: 5692720010234493016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_36
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 76
+        width: 709
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6533ba075b2e2d1f0800000000000000
+      internalID: -1021504896552455338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_37
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 76
+        width: 705
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bcc7a449895a900800000000000000
+      internalID: 695129480170883906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_38
+      rect:
+        serializedVersion: 2
+        x: 4331
+        y: 76
+        width: 696
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cdca495397f5da0800000000000000
+      internalID: -5953906911325922216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant2_cave_39
+      rect:
+        serializedVersion: 2
+        x: 5367
+        y: 76
+        width: 692
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c287b2946596d2f60800000000000000
+      internalID: 8011175131477669932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
