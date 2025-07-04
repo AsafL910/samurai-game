@@ -24,7 +24,7 @@ TagManager:
   - Ground
   - Background
   - PostProcessing
-  - 
+  - Minimap
   - 
   - 
   - 
@@ -62,6 +62,9 @@ TagManager:
     locked: 0
   - name: Front Decorations
     uniqueID: 1548250631
+    locked: 0
+  - name: Minimap
+    uniqueID: 1651633193
     locked: 0
   - name: frontMenu
     uniqueID: 1092830599
