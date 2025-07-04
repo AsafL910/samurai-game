@@ -25,6 +25,9 @@ public class PlayerCombat : MonoBehaviour
     public Animator swordAnimatorController;
     public GameObject Sword;
     public Sword swordScript;
+    public GameObject ShurikenPrefab;
+    public float throwSpeed = 100f;
+    public float throwableSpawnDistance = 1.1f;
     private GameObject Arrow => SlashArrowRotationScript.instance != null
     ? SlashArrowRotationScript.instance.gameObject
     : null;
@@ -82,6 +85,14 @@ public class PlayerCombat : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && playerStatus.CanHeal() && playerStatus.isResolveFull())
         {
             heal();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            var shuriken = Instantiate(ShurikenPrefab);
+
+            shuriken.gameObject.transform.position = transform.position + Arrow.GetComponent<SlashArrowRotationScript>().GetDirection().normalized * throwableSpawnDistance;
+            shuriken.gameObject.GetComponent<Rigidbody2D>().AddForce(Arrow.GetComponent<SlashArrowRotationScript>().GetDirection().normalized * throwSpeed, ForceMode2D.Impulse);
         }
     }
 

@@ -2331,6 +2331,7 @@ MonoBehaviour:
   weight: 2
   knockBack: 3000
   damage: 30
+  aIDestinationSetter: {fileID: 374962405}
 --- !u!50 &374962403
 Rigidbody2D:
   serializedVersion: 4
@@ -3867,7 +3868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &640393672
 Transform:
   m_ObjectHideFlags: 0
@@ -4969,6 +4970,10 @@ MonoBehaviour:
   swordAnimatorController: {fileID: 1879711211}
   Sword: {fileID: 1879711208}
   swordScript: {fileID: 1879711213}
+  ShurikenPrefab: {fileID: 5241621260969196938, guid: 92201c5f023d5cc498f36eab5c6b7eec,
+    type: 3}
+  throwSpeed: 10
+  throwableSpawnDistance: 1.2
   timeManager: {fileID: 141001826}
   slashSpeed: 40
 --- !u!114 &834802917
@@ -8683,7 +8688,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7954d816a325ad94c94fdf213f7a8dc1, type: 2}
+  - {fileID: 2100000, guid: 9ec6a5d7febdd5646b6ab04a854bd8b5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

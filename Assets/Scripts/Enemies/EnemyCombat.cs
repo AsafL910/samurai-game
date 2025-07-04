@@ -18,20 +18,23 @@ public class EnemyCombat : MonoBehaviour
     public float knockBack;
     public float damage;
 
+    public AIDestinationSetter aIDestinationSetter;
+
     void Start()
     {
         ripplePostProcessor = FindObjectOfType<RipplePostProcessor>();
         enemyStatus = new EnemyStatus(maxHealth, hitpoints, weight, knockBack, damage);
+        aIDestinationSetter.target = FindObjectOfType<PlayerMovement>().gameObject.transform;
     }
-    
+
     public void DeathCheck()
     {
         if (enemyStatus.hitpoints <= 0f)
         {
             ripplePostProcessor.Ripple();
-            //cameraShake.GetComponent<CameraShake>().Shake();
+            // cameraShake.GetComponent<CameraShake>().Shake();
             //fIX
-            Instantiate(bloodSplatter.GetRandomSplatter(), transform.position - new Vector3(0,0.6f,0), Quaternion.identity);
+            Instantiate(bloodSplatter.GetRandomSplatter(), transform.position - new Vector3(0, 0.6f, 0), Quaternion.identity);
             Destroy(gameObject);
         }
     }
@@ -40,8 +43,17 @@ public class EnemyCombat : MonoBehaviour
     {
         if (other.gameObject.tag == "sword")
         {
-            FindObjectOfType<AudioManager>().Play(soundsWhenHit[Random.Range(0,soundsWhenHit.Length)]);
+            FindObjectOfType<AudioManager>().Play(soundsWhenHit[Random.Range(0, soundsWhenHit.Length)]);
             TakeSwordDamage(other.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.tag == "sword")
+        {
+            FindObjectOfType<AudioManager>().Play(soundsWhenHit[Random.Range(0, soundsWhenHit.Length)]);
+            TakeSwordDamage(collision.collider.gameObject);
         }
     }
 
@@ -62,7 +74,7 @@ public class EnemyCombat : MonoBehaviour
         TakeAnyDamage(damage);
     }
 
-    public void TakeAnyDamage(float damage) 
+    public void TakeAnyDamage(float damage)
     {
         enemyStatus.hitpoints -= damage;
         Instantiate(sparks, transform.position, Quaternion.identity);
