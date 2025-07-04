@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
@@ -23,14 +22,13 @@ public class GameManager : MonoBehaviour
 
 	public void Restart()
 	{
-		// Register a one-time scene loaded callback
 		SceneManager.sceneLoaded += OnSceneLoaded;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
 	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{
-		SceneManager.sceneLoaded -= OnSceneLoaded; // Unregister to avoid duplicate calls
+		SceneManager.sceneLoaded -= OnSceneLoaded;
 		Debug.Log("OnSceneLoaded called");
 		var player = FindObjectOfType<RecieveDamage>();
 		if (player != null)

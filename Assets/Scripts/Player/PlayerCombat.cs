@@ -25,6 +25,7 @@ public class PlayerCombat : MonoBehaviour
     public Animator swordAnimatorController;
     public GameObject Sword;
     public Sword swordScript;
+
     public GameObject ShurikenPrefab;
     public float throwSpeed = 100f;
     public float throwableSpawnDistance = 1.1f;
@@ -87,10 +88,10 @@ public class PlayerCombat : MonoBehaviour
             heal();
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && playerStatus.HasShuriken())
         {
             var shuriken = Instantiate(ShurikenPrefab);
-
+            playerStatus.SetShurikenCount(playerStatus.GetShurikenCount() - 1);
             shuriken.gameObject.transform.position = transform.position + Arrow.GetComponent<SlashArrowRotationScript>().GetDirection().normalized * throwableSpawnDistance;
             shuriken.gameObject.GetComponent<Rigidbody2D>().AddForce(Arrow.GetComponent<SlashArrowRotationScript>().GetDirection().normalized * throwSpeed, ForceMode2D.Impulse);
         }
@@ -206,6 +207,12 @@ public class PlayerCombat : MonoBehaviour
             isSuperSlashing = false;
             playerMovement.playerCollider.isTrigger = false;
             isReadyForSlash = false;
+        }
+        if (other.tag == "ShurikenSupply")
+        {
+            playerStatus.SetShurikenCount(playerStatus.GetShurikenCount() + 10);
+            Destroy(other.gameObject);
+            //make sound
         }
     }
 

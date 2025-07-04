@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +9,7 @@ public class UpdateStatusBars : MonoBehaviour
     public PlayerStatus player;
     public Material glowMat;
     private Material defaultMat;
+    public TextMeshProUGUI shurikenCount;
 
     public static UpdateStatusBars instance;
     void Awake()
@@ -26,27 +26,29 @@ public class UpdateStatusBars : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-        private void Start()
-	{
-        defaultMat = resolve.material;
-	}
-
-	void Update()
+    private void Start()
     {
-        UpdateStatusBar(health,player.GetHP(),player.GetTotalHP());
+        defaultMat = resolve.material;
+    }
+
+    void Update()
+    {
+        UpdateStatusBar(health, player.GetHP(), player.GetTotalHP());
         UpdateStatusBar(resolve, player.GetResolve(), player.GetTotalResolve());
 
         if (player.GetResolve() == player.GetTotalResolve())
         {
             resolve.material = glowMat;
         }
-        else 
+        else
         {
             resolve.material = defaultMat;
         }
+
+        shurikenCount.text = player.GetShurikenCount().ToString();
     }
 
-    void UpdateStatusBar(Image bar, float curr, float total) 
+    void UpdateStatusBar(Image bar, float curr, float total)
     {
         bar.fillAmount = curr / total;
     }

@@ -13,14 +13,15 @@ public class PlayerStatus : MonoBehaviour
     private bool canHeal;
     private bool canDoubleJump;
     private Transform positionTransform;
+    public int ShurikenCount;
 
     private void Start()
     {
-        InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, gameObject.transform);
+        InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, gameObject.transform, 0);
         //InitPlayerStatus(loadPlayer());
     }
 
-    public void InitPlayerStatus(float hp, float totalHp, float resolve, float totalResolve, bool canSuperSlash, bool canHeal, bool canDoubleJump, Transform positionTransform)
+    public void InitPlayerStatus(float hp, float totalHp, float resolve, float totalResolve, bool canSuperSlash, bool canHeal, bool canDoubleJump, Transform positionTransform, int shurikenCount)
     {
         this.hp = hp;
         this.totalhp = totalHp;
@@ -30,6 +31,7 @@ public class PlayerStatus : MonoBehaviour
         this.canHeal = canHeal;
         this.canDoubleJump = canDoubleJump;
         this.positionTransform = positionTransform;
+        this.ShurikenCount = shurikenCount;
     }
     public void InitPlayerStatus(PlayerStatus other)
     {
@@ -41,6 +43,7 @@ public class PlayerStatus : MonoBehaviour
         this.canHeal = other.canHeal;
         this.canDoubleJump = other.canDoubleJump;
         this.positionTransform = other.positionTransform;
+        this.ShurikenCount = other.ShurikenCount;
     }
 
     public void TakeDamage(float damage)
@@ -133,4 +136,19 @@ public class PlayerStatus : MonoBehaviour
     {
         return SaveSystem.Load();
     }
+
+    public bool HasShuriken()
+    {
+        return ShurikenCount > 0;
+    }
+
+    public void SetShurikenCount(int shurikenCount)
+    {
+        this.ShurikenCount = shurikenCount;
+    }
+
+    public int GetShurikenCount()
+    {
+        return ShurikenCount;
+     }
 }
