@@ -18,6 +18,7 @@ public class SlimeMovement : MonoBehaviour
 
     void Update()
     {
+        if (player == null) return; 
         Vector2 moveDir = new Vector2(player.position.x - transform.position.x, player.position.y - transform.position.y);
         if (Mathf.Abs(moveDir.magnitude) < maxViewingDistance && !isJumping) {
             StartCoroutine(MoveToPlayer(moveDir.normalized));

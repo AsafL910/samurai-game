@@ -9,7 +9,7 @@ public class RecieveDamage : MonoBehaviour
     public GameObject blood;
     public GameObject katana;
     public GameObject gameOverScreen;
-    private bool gameEnded;
+    public bool gameEnded;
     [SerializeField]
     private float deathDelay;
     void Start()
@@ -25,7 +25,8 @@ public class RecieveDamage : MonoBehaviour
             Instantiate(katana, transform.position, Quaternion.identity);
             Instantiate(blood, transform.position, Quaternion.identity);
             gameEnded = true;
-            gameObject.SetActive(false);
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<PlayerMovement>().enabled = false;
             FindObjectOfType<AudioManager>().Stop("Ambient Music - Mossy");
             FindObjectOfType<AudioManager>().Stop("footsteps");
             FindObjectOfType<AudioManager>().Play("DeathSound");
@@ -40,9 +41,9 @@ public class RecieveDamage : MonoBehaviour
             player.TakeDamage(player.GetTotalHP());
         }
     }
-    void ShowGameOverScreen() 
+    void ShowGameOverScreen()
     {
-            gameOverScreen.SetActive(true);       
+        gameOverScreen.SetActive(true);
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -51,5 +52,14 @@ public class RecieveDamage : MonoBehaviour
         {
             player.SetHP(player.GetHP() - 20);
         }
+    }
+    
+    public void ResetState(Vector3 checkpoint)
+    {
+        gameEnded = false;
+        GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<PlayerMovement>().enabled = true;
+        GetComponent<PlayerStatus>().FillHP();
+        transform.position = checkpoint;
     }
 }

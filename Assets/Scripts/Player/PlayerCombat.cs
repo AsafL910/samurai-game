@@ -25,7 +25,9 @@ public class PlayerCombat : MonoBehaviour
     public Animator swordAnimatorController;
     public GameObject Sword;
     public Sword swordScript;
-    public GameObject Arrow;
+    private GameObject Arrow => SlashArrowRotationScript.instance != null
+    ? SlashArrowRotationScript.instance.gameObject
+    : null;
     public TimeManager timeManager;
     public float slashSpeed;
     private bool isReadyForSlash;
@@ -46,13 +48,14 @@ public class PlayerCombat : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift) && !playerMovement.isGrounded && playerStatus.CanSuperSlash() && playerStatus.isResolveFull())
         {
-            if (!audioManager.isPlaying("SlowMo") && !isReadyForSlash) 
+            if (!audioManager.isPlaying("SlowMo") && !isReadyForSlash)
             {
                 audioManager.Play("SlowMo");
                 audioManager.ChangeVolume("Ambient Music - Mossy", 0.05f);
             }
-           
-            Arrow.SetActive(true);
+
+            Arrow.GetComponent<SpriteRenderer>().enabled = true;
+
             timeManager.SlowTime();
             playerMovement.playerAnimationController.SetBool("isSlowMotion", true);
             isReadyForSlash = true;
@@ -88,22 +91,22 @@ public class PlayerCombat : MonoBehaviour
         Sword.SetActive(true);
         playerAnimationController.SetBool("isSlash", true);
         float lookDirection = Input.GetAxisRaw("Vertical");
-            Sword.transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
+        Sword.transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
 
-            if (lookDirection != 0)
-            {
-                hitDirection = new Vector3(0f, lookDirection * transform.localScale.x).normalized;
-                changeSwordPosition(hitDirection * transform.localScale.x*2);
-                changeSwordRotation(hitDirection);
-                swordScript.direction = -hitDirection;
-            }
+        if (lookDirection != 0)
+        {
+            hitDirection = new Vector3(0f, lookDirection * transform.localScale.x).normalized;
+            changeSwordPosition(hitDirection * transform.localScale.x * 2);
+            changeSwordRotation(hitDirection);
+            swordScript.direction = -hitDirection;
+        }
 
-            else
-            {
-                hitDirection = new Vector3(playerMovement.transform.localScale.x, 0f).normalized;
-                changeSwordPosition(hitDirection);
-                swordScript.direction = hitDirection;
-            }
+        else
+        {
+            hitDirection = new Vector3(playerMovement.transform.localScale.x, 0f).normalized;
+            changeSwordPosition(hitDirection);
+            swordScript.direction = hitDirection;
+        }
 
         swordAnimatorController.Play("Slash1");
 
@@ -119,7 +122,7 @@ public class PlayerCombat : MonoBehaviour
             audioManager.Play("SuperSlashPrepare");
             audioManager.ChangeVolume("Ambient Music - Mossy", 0.2f);
             StartCoroutine(postProcessingEffects.flashScreen());
-            Arrow.SetActive(false);
+            Arrow.GetComponent<SpriteRenderer>().enabled = false;
             playerAnimationController.SetBool("isSlowMotion", false);
             timeManager.RevertTime();
 
@@ -138,10 +141,10 @@ public class PlayerCombat : MonoBehaviour
             isSuperSlashing = true;
             playerMovement.playerCollider.isTrigger = true;
             isReadyForSlash = false;
-            
+
             playerStatus.SetResolve(0f);
-		}
-	}
+        }
+    }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -159,7 +162,8 @@ public class PlayerCombat : MonoBehaviour
             enemyRb.AddForce(-direction * enemyStatus.knockBack, ForceMode2D.Force); //pushback tutorial, might help https://www.youtube.com/watch?v=sdGeGQPPW7E
         }
 
-        if (other.gameObject.tag == "Hazard" && !playerIsHit) {
+        if (other.gameObject.tag == "Hazard" && !playerIsHit)
+        {
             audioManager.Play("PlayerTakeDamage");
             playerStatus.TakeDamage(30f);
             StartCoroutine(flashWhite(flashDuration));
@@ -180,23 +184,29 @@ public class PlayerCombat : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-    { 
+    {
         if (isSuperSlashing && other.gameObject.tag == "Enemy")
         {
             EnemyCombat enemy = other.gameObject.GetComponent<EnemyCombat>();
             enemy.TakeAnyDamage(enemy.enemyStatus.maxHealth);
         }
+        if (isSuperSlashing && other.gameObject.tag == "ground")
+        {
+            isSuperSlashing = false;
+            playerMovement.playerCollider.isTrigger = false;
+            isReadyForSlash = false;
+        }
     }
 
-	private void OnTriggerStay2D(Collider2D other)
-	{
+    private void OnTriggerStay2D(Collider2D other)
+    {
         if (other.CompareTag("Poison"))
         {
             playerStatus.TakeDamage(Time.deltaTime * other.gameObject.GetComponent<Poison>().damage);
         }
     }
 
-	private void heal()
+    private void heal()
     {
         audioManager.Play("PlayerHeal");
         playerStatus.FillHP();
@@ -205,12 +215,14 @@ public class PlayerCombat : MonoBehaviour
         healthParticles.transform.parent = transform;
     }
 
-    void changeSwordPosition(Vector3 direction) {
+    void changeSwordPosition(Vector3 direction)
+    {
         Sword.transform.position = playerStatus.GetTransform().position;
         Sword.transform.position += direction * swordOffset;
     }
 
-    void changeSwordRotation(Vector3 direction) {
+    void changeSwordRotation(Vector3 direction)
+    {
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Sword.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         Sword.GetComponent<Sword>().direction = new Vector2(direction.x, direction.y);

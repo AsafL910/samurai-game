@@ -11,19 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 409043d42deead945888155117f750b4
-  - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: cdbe04172918638458ad9a871cb547c4
-  - enabled: 1
-    path: Assets/Scenes/Forest.unity
-    guid: febfba2c8cb98b74cbbdaf150e38674b
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: 7a47e85bbe69a8b4992e3546c8da13e3
   - enabled: 1
-    path: Assets/Scenes/Forest 2.unity
+    path: Assets/Scenes/Forest.unity
     guid: ee58ea04e0d37a247a26e7769781d554
   - enabled: 1
-    path: Assets/Scenes/Forest 3.unity
+    path: Assets/Scenes/Forest 2.unity
     guid: 27d19303ff1f6e54b89f827bc534368a
   m_configObjects: {}

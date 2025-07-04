@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
@@ -20,8 +21,22 @@ public class GameManager : MonoBehaviour
 		DontDestroyOnLoad(gameObject);
 	}
 
-	void Restart()
+	public void Restart()
 	{
+		// Register a one-time scene loaded callback
+		SceneManager.sceneLoaded += OnSceneLoaded;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	}
+
+	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	{
+		SceneManager.sceneLoaded -= OnSceneLoaded; // Unregister to avoid duplicate calls
+		Debug.Log("OnSceneLoaded called");
+		var player = FindObjectOfType<RecieveDamage>();
+		if (player != null)
+		{
+			Debug.Log("Reset state called");
+			player.ResetState(checkpoint);
+		}
 	}
 }
