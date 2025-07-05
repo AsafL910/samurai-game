@@ -1,15 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
 	public string toScene;
-
-	public void LoadScene() 
+	public Vector3 destination;
+	public void LoadScene()
 	{
-		SceneManager.LoadScene(toScene);
+		StartCoroutine(GameManager.instance.LoadLevel(toScene, destination));
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)

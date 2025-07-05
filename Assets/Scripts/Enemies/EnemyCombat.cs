@@ -24,7 +24,10 @@ public class EnemyCombat : MonoBehaviour
     {
         ripplePostProcessor = FindObjectOfType<RipplePostProcessor>();
         enemyStatus = new EnemyStatus(maxHealth, hitpoints, weight, knockBack, damage);
-        aIDestinationSetter.target = FindObjectOfType<PlayerMovement>().gameObject.transform;
+        if (aIDestinationSetter != null)
+        {
+            aIDestinationSetter.target = FindObjectOfType<PlayerMovement>().gameObject.transform;
+        }
     }
 
     public void DeathCheck()

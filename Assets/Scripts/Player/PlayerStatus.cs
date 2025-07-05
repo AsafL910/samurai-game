@@ -17,7 +17,7 @@ public class PlayerStatus : MonoBehaviour
 
     private void Start()
     {
-        InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, gameObject.transform, 0);
+        InitPlayerStatus(300f, 300f, 0f, 100f, false, true, true, gameObject.transform, 0);
         //InitPlayerStatus(loadPlayer());
     }
 
@@ -150,5 +150,5 @@ public class PlayerStatus : MonoBehaviour
     public int GetShurikenCount()
     {
         return ShurikenCount;
-     }
+    }
 }
