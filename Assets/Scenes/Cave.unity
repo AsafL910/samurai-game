@@ -11333,6 +11333,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SuperSlash Arrow
       objectReference: {fileID: 0}
+    - target: {fileID: 7052289631558825429, guid: 408045e446598e0499de5ae7fcde2c60,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7052289631558825434, guid: 408045e446598e0499de5ae7fcde2c60,
         type: 3}
       propertyPath: m_RootOrder

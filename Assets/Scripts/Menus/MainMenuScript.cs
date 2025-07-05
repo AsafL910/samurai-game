@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
-    public static void PlayGame() {
-        SceneManager.LoadScene("Forest 2");
+    public static void PlayGame()
+    {
+        SceneManager.LoadScene("Forest");
         Time.timeScale = 1;
     }
 

@@ -4757,7 +4757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb53834f42279a4f8be2bc7559283a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: Forest 3
+  toScene: Forest 2
   destination: {x: 0, y: 0, z: 0}
 --- !u!61 &675149060
 BoxCollider2D:
