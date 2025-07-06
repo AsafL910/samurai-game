@@ -11,6 +11,7 @@ public class GainSuperSlash : MonoBehaviour
             other.gameObject.GetComponent<PlayerStatus>().SetCanSuperSlash(true);
             SuperSlashTutorialMessage.SetActive(true);
             DoubleJumpTutorialMessage.SetActive(false);
+            AudioManager.instance.Play("GainAbility");
             Destroy(gameObject);
         }
     }

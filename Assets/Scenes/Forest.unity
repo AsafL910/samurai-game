@@ -5967,7 +5967,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7772795, y: 1}
+    m_SensorSize: {x: 1.7772357, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6784,6 +6784,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CollectAmmo
     clip: {fileID: 8300000, guid: 15b28366c6b5d64478acbc214e7a9f4d, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: GainAbility
+    clip: {fileID: 8300000, guid: e7b37e7f03ae8464e8f7ca7b94d8cf43, type: 3}
     volume: 0.5
     pitch: 1
     loop: 0
@@ -8122,7 +8129,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7772795, y: 1}
+    m_SensorSize: {x: 1.7772357, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

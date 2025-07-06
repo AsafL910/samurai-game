@@ -17,7 +17,7 @@ public class PlayerStatus : MonoBehaviour
 
     private void Start()
     {
-        InitPlayerStatus(300f, 300f, 0f, 100f, false, true, true, gameObject.transform, 0);
+        InitPlayerStatus(300f, 300f, 0f, 100f, false, true, false, gameObject.transform, 0);
         //InitPlayerStatus(loadPlayer());
     }
 
@@ -125,6 +125,10 @@ public class PlayerStatus : MonoBehaviour
     public void SetCanSuperSlash(bool value)
     {
         this.canSuperSlash = value;
+    }
+    public void SetCanDoubleJump(bool value)
+    {
+        this.canDoubleJump = value;
     }
 
     public void savePlayer()
