@@ -11,6 +11,8 @@ public class FallingPlatform : MonoBehaviour
 
 	[SerializeField]
 	private GameObject brokenRockParts;
+	[SerializeField]
+	private GameObject brokenRockShards;
 	private void Start()
 	{
 		gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
@@ -18,7 +20,8 @@ public class FallingPlatform : MonoBehaviour
 	}
 	private void OnCollisionEnter2D(Collision2D other)
 	{
-		if (other.gameObject.tag == "Player" && other.gameObject.transform.position.y > transform.position.y) {
+		if (other.gameObject.tag == "Player" && other.gameObject.transform.position.y > transform.position.y)
+		{
 			StartCoroutine(fall());
 		}
 	}
@@ -29,11 +32,13 @@ public class FallingPlatform : MonoBehaviour
 		{
 			FindObjectOfType<AudioManager>().Play("BreakingRocks");
 			Instantiate(brokenRockParts, transform.position, Quaternion.identity);
+			Instantiate(brokenRockShards, transform.position, Quaternion.identity);
 			Destroy(gameObject);
 		}
 	}
 
-	private IEnumerator fall() {
+	private IEnumerator fall()
+	{
 
 		yield return new WaitForSeconds(fallDelay);
 		gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
