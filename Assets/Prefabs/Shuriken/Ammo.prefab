@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1454138384076582191}
   - component: {fileID: 89585261968783664}
   - component: {fileID: 5035030200592247615}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Ammo
   m_TagString: ShurikenSupply
   m_Icon: {fileID: 0}
