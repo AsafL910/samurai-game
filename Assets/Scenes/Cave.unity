@@ -1342,6 +1342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShurikenCount: 0
+  sawTutorial: 0
 --- !u!114 &259138530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11616,6 +11617,7 @@ GameObject:
   - component: {fileID: 1441392175}
   - component: {fileID: 1441392174}
   - component: {fileID: 1441392173}
+  - component: {fileID: 1441392177}
   m_Layer: 5
   m_Name: Double Jump Tutorial Message
   m_TagString: Untagged
@@ -11794,6 +11796,32 @@ RectTransform:
   m_AnchoredPosition: {x: -11.89, y: -27.64}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.08, y: 0.69}
+--- !u!61 &1441392177
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441392172}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06230545, y: 0.6230507}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.9522228, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1443495146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14497,6 +14525,7 @@ GameObject:
   - component: {fileID: 1990714960}
   - component: {fileID: 1990714959}
   - component: {fileID: 1990714958}
+  - component: {fileID: 1990714962}
   m_Layer: 5
   m_Name: Super Slash Tutorial Message
   m_TagString: Untagged
@@ -14675,6 +14704,32 @@ RectTransform:
   m_AnchoredPosition: {x: 2.5138943, y: -26.071049}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.08, y: 0.69}
+--- !u!61 &1990714962
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990714957}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.12461007, y: 0.7268925}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.9106863, y: 2.2876358}
+  m_EdgeRadius: 0
 --- !u!1001 &2003482432
 PrefabInstance:
   m_ObjectHideFlags: 0

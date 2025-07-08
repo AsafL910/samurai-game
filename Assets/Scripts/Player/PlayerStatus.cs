@@ -15,6 +15,8 @@ public class PlayerStatus : MonoBehaviour
     private Transform positionTransform;
     public int ShurikenCount;
 
+    public bool sawTutorial;
+
     private void Start()
     {
         InitPlayerStatus(300f, 300f, 0f, 100f, false, true, false, gameObject.transform, 0);
@@ -32,6 +34,7 @@ public class PlayerStatus : MonoBehaviour
         this.canDoubleJump = canDoubleJump;
         this.positionTransform = positionTransform;
         this.ShurikenCount = shurikenCount;
+        sawTutorial = false;
     }
     public void InitPlayerStatus(PlayerStatus other)
     {

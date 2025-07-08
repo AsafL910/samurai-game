@@ -27,6 +27,10 @@ public class RecieveDamage : MonoBehaviour
             gameEnded = true;
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<PlayerCombat>().enabled = false;
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+            GetComponent<CapsuleCollider2D>().enabled = false;
+
             FindObjectOfType<AudioManager>().Stop("Ambient Music - Mossy");
             FindObjectOfType<AudioManager>().Stop("footsteps");
             FindObjectOfType<AudioManager>().Play("DeathSound");
@@ -53,12 +57,19 @@ public class RecieveDamage : MonoBehaviour
             player.SetHP(player.GetHP() - 20);
         }
     }
-    
+
     public void ResetState(Vector3 checkpoint)
     {
         gameEnded = false;
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<PlayerMovement>().enabled = true;
+        GetComponent<PlayerCombat>().enabled = true;
+        GetComponent<Rigidbody2D>().constraints ^= RigidbodyConstraints2D.FreezePositionX;
+        GetComponent<Rigidbody2D>().constraints ^= RigidbodyConstraints2D.FreezePositionY;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        GetComponent<CapsuleCollider2D>().enabled = true;
+        FindObjectOfType<AudioManager>().Play("Ambient Music - Mossy");
+
         GetComponent<PlayerStatus>().FillHP();
         transform.position = checkpoint;
     }
