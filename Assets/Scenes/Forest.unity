@@ -6915,7 +6915,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.44176197, y: -0.7172594}
+  m_Offset: {x: 0.44176197, y: -10.066791}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6926,7 +6926,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.150301, y: 1.774435}
+  m_Size: {x: 6.150301, y: 20.473497}
   m_EdgeRadius: 0
 --- !u!4 &950851309
 Transform:
@@ -40276,7 +40276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1b4bef04fef744c913522db964f7b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {x: 9, y: -2}
+  checkpoint: {x: -31, y: -8}
   sceneTransitionAnimation: {fileID: 1653946544}
 --- !u!4 &1621165702
 Transform:

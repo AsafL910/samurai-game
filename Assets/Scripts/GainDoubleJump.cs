@@ -5,6 +5,11 @@ using UnityEngine;
 public class GainDoubleJump : MonoBehaviour
 {
     public GameObject DoubleJumpTutorialMessage;
+
+    void Start()
+    {
+        gameObject.SetActive(!PlayerMovement.instance.playerStatus.CanDoubleJump());
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")

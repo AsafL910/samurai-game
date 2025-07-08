@@ -4,6 +4,11 @@ public class GainSuperSlash : MonoBehaviour
 {
     public GameObject SuperSlashTutorialMessage;
     public GameObject DoubleJumpTutorialMessage;
+
+    void Start()
+    {
+        gameObject.SetActive(!PlayerMovement.instance.playerStatus.CanSuperSlash());
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
