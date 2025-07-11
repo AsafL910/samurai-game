@@ -6470,7 +6470,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7775974, y: 1}
+    m_SensorSize: {x: 1.7783418, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7093,253 +7093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d932528fc7f5446a872d590d6ed6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &951223945
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 951223947}
-  - component: {fileID: 951223946}
-  m_Layer: 0
-  m_Name: Audio Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &951223946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951223945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b244a6fa6422f549afc4d4e06d909dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Ambient Music - Mossy
-    clip: {fileID: 8300000, guid: 94bed67c25d3bf64eb7521c5b43f0341, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 1
-    playOnAwake: 1
-    source: {fileID: 0}
-  - name: footsteps
-    clip: {fileID: 8300000, guid: 047db4c32c0dce549b5ffb260441de45, type: 3}
-    volume: 0.052
-    pitch: 1
-    loop: 1
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordMetal1
-    clip: {fileID: 8300000, guid: 34778b0f9bd8b4046a2a7f0632c79db5, type: 3}
-    volume: 0.3
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordMetal2
-    clip: {fileID: 8300000, guid: 9ef9d2ecbdc3b1143a9bca2719c24241, type: 3}
-    volume: 0.3
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordMetal3
-    clip: {fileID: 8300000, guid: e56f50df660d16241af9645334e07db2, type: 3}
-    volume: 0.3
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordMetal4
-    clip: {fileID: 8300000, guid: 8bb593b18e148404798e3f0ae87470ce, type: 3}
-    volume: 0.3
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordMiss
-    clip: {fileID: 8300000, guid: 02c57aa62329d0b48bfe724c60c288e9, type: 3}
-    volume: 0.502
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SuperSlashPrepare
-    clip: {fileID: 8300000, guid: 07002b1bfeb670e43b4783a75e706ca8, type: 3}
-    volume: 0.502
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SuperSlashHit
-    clip: {fileID: 8300000, guid: 80d06c9c9c6f5c148a1c003d7c07b543, type: 3}
-    volume: 0.502
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordFlesh1
-    clip: {fileID: 8300000, guid: f9b7ff0bf2a706942a29639f000dcc76, type: 3}
-    volume: 0.3
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordFlesh2
-    clip: {fileID: 8300000, guid: 749a0afc396698a419db99ecb1a35596, type: 3}
-    volume: 0.3
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordFlesh3
-    clip: {fileID: 8300000, guid: f2c37c75ff870a44eb8fed26bf2a2aee, type: 3}
-    volume: 0.3
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordFlesh4
-    clip: {fileID: 8300000, guid: e39b93a9dd62e1c41ba6c02afa6cd2a0, type: 3}
-    volume: 0.3
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SlowMo
-    clip: {fileID: 8300000, guid: c75a389daac876f43b05a3e2caddd6fa, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: Trampoline
-    clip: {fileID: 8300000, guid: ee006c5776bb03849980f76fdb17d773, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: DirtLanding
-    clip: {fileID: 8300000, guid: e272e8c2531187c4190dbb0919ee9b45, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: PlayerTakeDamage
-    clip: {fileID: 8300000, guid: 81d7a3d0b8974f747a97dc4c5cabb933, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: PlayerHeal
-    clip: {fileID: 8300000, guid: 02f6b9bb8b4bf4543bfc0fa9b7935a15, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: PlayerJump
-    clip: {fileID: 8300000, guid: a3ba215993a191f47b09fc7f1398ec8f, type: 3}
-    volume: 0.2
-    pitch: 0.7
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: MenuButtonClick
-    clip: {fileID: 8300000, guid: 76900dfe0d15dc34fb621e6ab0cf8466, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: ActiveMenu
-    clip: {fileID: 8300000, guid: 7e58c1718e011c847949792efd486a17, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: BreakingRocks
-    clip: {fileID: 8300000, guid: f8047272b167d0f40bbb294ce807235e, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: SwordDrop
-    clip: {fileID: 8300000, guid: 7ba0ff18abecf744390cc23eea3b87f6, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: PoisonStart
-    clip: {fileID: 8300000, guid: de34196d85ccb0148a9f78e199206987, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: DeathSound
-    clip: {fileID: 8300000, guid: 3204e59e7518ede4da4c3ebf9057549c, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: CollectAmmo
-    clip: {fileID: 8300000, guid: 15b28366c6b5d64478acbc214e7a9f4d, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: GainAbility
-    clip: {fileID: 8300000, guid: e7b37e7f03ae8464e8f7ca7b94d8cf43, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: StoneDoorOpen
-    clip: {fileID: 8300000, guid: 0ef88693d34277a4fb0273b7fac873e3, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: InsertKey
-    clip: {fileID: 8300000, guid: 6ed1f9a5725d18f428a892c7ea07fb47, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
---- !u!4 &951223947
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951223945}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.07, y: -7.2799997, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1621165702}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &951920744
 GameObject:
   m_ObjectHideFlags: 0
@@ -8903,7 +8656,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7775974, y: 1}
+    m_SensorSize: {x: 1.7783418, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -40469,7 +40222,7 @@ Transform:
   m_Children:
   - {fileID: 1653946545}
   - {fileID: 141001827}
-  - {fileID: 951223947}
+  - {fileID: 1910132544}
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43707,6 +43460,260 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 520736206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1910132543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1910132544}
+  - component: {fileID: 1910132545}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1910132544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910132543}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.07, y: -7.2799997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1621165702}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1910132545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910132543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b244a6fa6422f549afc4d4e06d909dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Ambient Music - Mossy
+    clip: {fileID: 8300000, guid: 94bed67c25d3bf64eb7521c5b43f0341, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
+  - name: footsteps
+    clip: {fileID: 8300000, guid: 047db4c32c0dce549b5ffb260441de45, type: 3}
+    volume: 0.052
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordMetal1
+    clip: {fileID: 8300000, guid: 34778b0f9bd8b4046a2a7f0632c79db5, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordMetal2
+    clip: {fileID: 8300000, guid: 9ef9d2ecbdc3b1143a9bca2719c24241, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordMetal3
+    clip: {fileID: 8300000, guid: e56f50df660d16241af9645334e07db2, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordMetal4
+    clip: {fileID: 8300000, guid: 8bb593b18e148404798e3f0ae87470ce, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordMiss
+    clip: {fileID: 8300000, guid: 02c57aa62329d0b48bfe724c60c288e9, type: 3}
+    volume: 0.502
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SuperSlashPrepare
+    clip: {fileID: 8300000, guid: 07002b1bfeb670e43b4783a75e706ca8, type: 3}
+    volume: 0.502
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SuperSlashHit
+    clip: {fileID: 8300000, guid: 80d06c9c9c6f5c148a1c003d7c07b543, type: 3}
+    volume: 0.502
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordFlesh1
+    clip: {fileID: 8300000, guid: f9b7ff0bf2a706942a29639f000dcc76, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordFlesh2
+    clip: {fileID: 8300000, guid: 749a0afc396698a419db99ecb1a35596, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordFlesh3
+    clip: {fileID: 8300000, guid: f2c37c75ff870a44eb8fed26bf2a2aee, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordFlesh4
+    clip: {fileID: 8300000, guid: e39b93a9dd62e1c41ba6c02afa6cd2a0, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SlowMo
+    clip: {fileID: 8300000, guid: c75a389daac876f43b05a3e2caddd6fa, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Trampoline
+    clip: {fileID: 8300000, guid: ee006c5776bb03849980f76fdb17d773, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: DirtLanding
+    clip: {fileID: 8300000, guid: e272e8c2531187c4190dbb0919ee9b45, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: PlayerTakeDamage
+    clip: {fileID: 8300000, guid: 81d7a3d0b8974f747a97dc4c5cabb933, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: PlayerHeal
+    clip: {fileID: 8300000, guid: 02f6b9bb8b4bf4543bfc0fa9b7935a15, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: PlayerJump
+    clip: {fileID: 8300000, guid: a3ba215993a191f47b09fc7f1398ec8f, type: 3}
+    volume: 0.2
+    pitch: 0.7
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: MenuButtonClick
+    clip: {fileID: 8300000, guid: 76900dfe0d15dc34fb621e6ab0cf8466, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: ActiveMenu
+    clip: {fileID: 8300000, guid: 7e58c1718e011c847949792efd486a17, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: BreakingRocks
+    clip: {fileID: 8300000, guid: f8047272b167d0f40bbb294ce807235e, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SwordDrop
+    clip: {fileID: 8300000, guid: 7ba0ff18abecf744390cc23eea3b87f6, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: PoisonStart
+    clip: {fileID: 8300000, guid: de34196d85ccb0148a9f78e199206987, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: DeathSound
+    clip: {fileID: 8300000, guid: 3204e59e7518ede4da4c3ebf9057549c, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: CollectAmmo
+    clip: {fileID: 8300000, guid: 15b28366c6b5d64478acbc214e7a9f4d, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: GainAbility
+    clip: {fileID: 8300000, guid: e7b37e7f03ae8464e8f7ca7b94d8cf43, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: StoneDoorOpen
+    clip: {fileID: 8300000, guid: 0ef88693d34277a4fb0273b7fac873e3, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: InsertKey
+    clip: {fileID: 8300000, guid: 6ed1f9a5725d18f428a892c7ea07fb47, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Gong
+    clip: {fileID: 8300000, guid: c0b37a9a115451f4f93aa18b7174ee91, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
 --- !u!4 &1924591682 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8265550257309768138, guid: 42ea7800526068046bc082201c171ff6,
