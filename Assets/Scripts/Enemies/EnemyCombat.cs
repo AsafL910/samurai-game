@@ -62,6 +62,10 @@ public class EnemyCombat : MonoBehaviour
             FindObjectOfType<AudioManager>().Play(soundsWhenHit[Random.Range(0, soundsWhenHit.Length)]);
             TakeSwordDamage(collision.collider.gameObject);
         }
+        if (collision.collider.gameObject.tag == "Hazard")
+        {
+            TakeAnyDamage(300f);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
