@@ -214,6 +214,10 @@ public class PlayerCombat : MonoBehaviour
             audioManager.Play("CollectAmmo");
             Destroy(other.gameObject);
         }
+        if (isSuperSlashing && other.tag == "ShurikenBox")
+        {
+            other.gameObject.GetComponent<AmmoBox>().BreakBox();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
