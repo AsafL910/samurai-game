@@ -2,12 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OrangeSlimeDeath : MonoBehaviour
+public interface ICustomEvent
+{
+	void OnCustomEvent(string data);
+}
+
+public class OrangeSlimeDeath : MonoBehaviour, ICustomEvent
 {
 	public GameObject poison;
-	private void OnDestroy()
+
+	public void OnCustomEvent(string data)
 	{
-		Instantiate(poison, transform.position, Quaternion.identity);
-		FindObjectOfType<AudioManager>().Play("PoisonStart");
+		if (data == "kill")
+		{
+			Debug.Log("Orange Slime Death Triggered");
+			Instantiate(poison, transform.position, Quaternion.identity);
+			FindObjectOfType<AudioManager>().Play("PoisonStart");
+		}
 	}
 }

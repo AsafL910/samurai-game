@@ -35,22 +35,14 @@ public class TimeManager : MonoBehaviour
 
     public void RevertTime()
     {
-        Time.timeScale += (1f/slowDownLength) * Time.unscaledDeltaTime;
-        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+        Time.timeScale = Mathf.Clamp((1f/slowDownLength) * Time.unscaledDeltaTime, 0f, 1f);
         Time.timeScale = 1;
         Time.fixedDeltaTime = Time.timeScale * 0.02f;
     }
 
     public bool IsTimeSlowed()
     {
-        bool isSlowed = false;
-
-        if (Time.timeScale < 1f)
-        {
-            isSlowed = true;
-        }
-
-        return isSlowed;
+        return Time.timeScale < 1f;
     }
 
     public void StopTime()
