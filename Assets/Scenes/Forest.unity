@@ -5261,7 +5261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: Forest 2
-  destination: {x: 0, y: 0, z: 0}
+  destination: {x: 18, y: 0, z: 0}
 --- !u!61 &675149060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6972,7 +6972,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.44176197, y: -10.066791}
+  m_Offset: {x: 0.44176197, y: -14.6}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7012,7 +7012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: Cave
-  destination: {x: -26.8, y: -23, z: 0}
+  destination: {x: -28, y: -20, z: 0}
 --- !u!114 &950851311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14984,6 +14984,16 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 77
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 11
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741826
+  - first: {x: -27, y: -31, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 77
       m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -15521,6 +15531,16 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
   - first: {x: -28, y: -30, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 77
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 1
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741826
+  - first: {x: -27, y: -30, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 77

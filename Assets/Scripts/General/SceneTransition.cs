@@ -8,6 +8,7 @@ public class SceneTransition : MonoBehaviour
 	public Vector3 destination;
 	public void LoadScene()
 	{
+		GameManager.instance.checkpoint = destination;
 		StartCoroutine(GameManager.instance.LoadLevel(toScene, destination));
 	}
 
