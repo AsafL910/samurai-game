@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
 
 	public IEnumerator LoadLevel(string scene, Vector3? adjustedPosition)
 	{
+		checkpoint = new Vector2(adjustedPosition?.x ?? 0, adjustedPosition?.y ?? 0);
 		sceneTransitionAnimation.SetTrigger("End");
 		yield return new WaitForSeconds(0.4f);
 		SceneManager.LoadSceneAsync(scene);
@@ -50,7 +51,6 @@ public class GameManager : MonoBehaviour
 		if (adjustedPosition != null && adjustedPosition != Vector3.zero)
 		{
 			yield return new WaitForSeconds(0.8f);
-			FindObjectOfType<PlayerMovement>().gameObject.transform.position = (Vector3)adjustedPosition;
 		}
 	}
 }

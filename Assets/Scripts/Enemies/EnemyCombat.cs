@@ -38,6 +38,10 @@ public class EnemyCombat : MonoBehaviour
             // cameraShake.GetComponent<CameraShake>().Shake();
             //fIX
             Instantiate(bloodSplatter.GetRandomSplatter(), transform.position - new Vector3(0, 0.6f, 0), Quaternion.identity);
+
+            var eventHandler = gameObject.GetComponent<ICustomEvent>();
+            eventHandler?.OnCustomEvent("kill");
+
             Destroy(gameObject);
         }
     }
@@ -57,6 +61,10 @@ public class EnemyCombat : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play(soundsWhenHit[Random.Range(0, soundsWhenHit.Length)]);
             TakeSwordDamage(collision.collider.gameObject);
+        }
+        if (collision.collider.gameObject.tag == "Hazard")
+        {
+            TakeAnyDamage(300f);
         }
     }
 

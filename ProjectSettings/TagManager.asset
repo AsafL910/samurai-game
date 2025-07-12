@@ -13,6 +13,8 @@ TagManager:
   - InstantKill
   - ShurikenSupply
   - Key
+  - Trophy
+  - ShurikenBox
   layers:
   - Default
   - TransparentFX
