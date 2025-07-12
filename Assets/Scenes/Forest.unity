@@ -43580,6 +43580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1910132544}
   - component: {fileID: 1910132545}
+  - component: {fileID: 1910132546}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -43713,7 +43714,7 @@ MonoBehaviour:
     playOnAwake: 0
     source: {fileID: 0}
   - name: Trampoline
-    clip: {fileID: 8300000, guid: ee006c5776bb03849980f76fdb17d773, type: 3}
+    clip: {fileID: 8300000, guid: 04bee270b8b08a7418023657f4153971, type: 3}
     volume: 0.5
     pitch: 1
     loop: 0
@@ -43825,12 +43826,33 @@ MonoBehaviour:
     playOnAwake: 0
     source: {fileID: 0}
   - name: Box Break
-    clip: {fileID: 8300000, guid: 4536eab9ebc810143962e35484aff8fc, type: 3}
+    clip: {fileID: 8300000, guid: d34ebb34dfa736c42b5b657cba229666, type: 3}
     volume: 0.5
     pitch: 1
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
+  - name: Footsteps2
+    clip: {fileID: 8300000, guid: 0579a7be6b8c6444886f1374aad552e9, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+--- !u!114 &1910132546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910132543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11eac2b046b9322419c002efe27662a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 0
+  trampAnimatoionController: {fileID: 0}
 --- !u!4 &1924591682 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8265550257309768138, guid: 42ea7800526068046bc082201c171ff6,
