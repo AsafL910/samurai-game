@@ -15,6 +15,7 @@ TagManager:
   - Key
   - Trophy
   - ShurikenBox
+  - EnemyShuriken
   layers:
   - Default
   - TransparentFX
