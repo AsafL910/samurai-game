@@ -23,11 +23,11 @@ public class TimeManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
     private void Start()
-	{
+    {
         Time.timeScale = 1;
         Time.fixedDeltaTime = Time.timeScale * 0.02f;
     }
-	public void SlowTime()
+    public void SlowTime()
     {
         Time.timeScale = slowDownFactor;
         Time.fixedDeltaTime = Time.timeScale * 0.02f;
@@ -35,7 +35,6 @@ public class TimeManager : MonoBehaviour
 
     public void RevertTime()
     {
-        Time.timeScale = Mathf.Clamp((1f/slowDownLength) * Time.unscaledDeltaTime, 0f, 1f);
         Time.timeScale = 1;
         Time.fixedDeltaTime = Time.timeScale * 0.02f;
     }

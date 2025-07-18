@@ -27,9 +27,4 @@ public class GenerateEnemies : MonoBehaviour
             enemyCounter++;
         }
     }
-
-	private void OnDrawGizmosSelected()
-	{
-        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.forward, spawnRadius);
-	}
 }

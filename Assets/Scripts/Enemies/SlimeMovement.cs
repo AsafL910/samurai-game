@@ -41,9 +41,4 @@ public class SlimeMovement : MonoBehaviour
         yield return new WaitForSeconds(1f);
         isJumping = false;
     }
-
-    private void OnDrawGizmosSelected()
-    {
-        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.forward, maxViewingDistance);
-    }
 }

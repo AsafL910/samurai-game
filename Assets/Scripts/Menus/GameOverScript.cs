@@ -29,7 +29,6 @@ public class GameOverScript : MonoBehaviour
 
     public static void QuitGame()
     {
-        Debug.Log("Quit");
         Application.Quit();
     }
 }

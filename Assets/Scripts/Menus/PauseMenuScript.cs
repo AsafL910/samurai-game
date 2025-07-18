@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuScript : MonoBehaviour
 {
-    public TimeManager timeManager;
     public GameObject pauseMenuUI;
     public GameObject healthBarFill;
     public GameObject healthBar;
@@ -54,7 +53,7 @@ public class PauseMenuScript : MonoBehaviour
         audioManager.Play("ActiveMenu");
         audioManager.ChangeVolume("Ambient Music - Mossy", 0.1f);
         pauseMenuUI.SetActive(true);
-        timeManager.StopTime();
+        TimeManager.instance.StopTime();
         setUIelements(false);
     }
 
@@ -63,7 +62,7 @@ public class PauseMenuScript : MonoBehaviour
         audioManager.Play("ActiveMenu");
         audioManager.ChangeVolume("Ambient Music - Mossy", 0.2f);
         pauseMenuUI.SetActive(false);
-        timeManager.RevertTime();
+        TimeManager.instance.RevertTime();
         setUIelements(true);  
     }
     public void ResumeMainMenu()

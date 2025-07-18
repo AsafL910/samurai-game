@@ -32,7 +32,6 @@ public class PlayerCombat : MonoBehaviour
     private GameObject Arrow => SlashArrowRotationScript.instance != null
     ? SlashArrowRotationScript.instance.gameObject
     : null;
-    public TimeManager timeManager;
     public float slashSpeed;
     private bool isReadyForSlash;
     public static bool isSuperSlashing;
@@ -59,8 +58,7 @@ public class PlayerCombat : MonoBehaviour
             }
 
             Arrow.GetComponent<SpriteRenderer>().enabled = true;
-
-            timeManager.SlowTime();
+            TimeManager.instance.SlowTime();
             playerMovement.playerAnimationController.SetBool("isSlowMotion", true);
             isReadyForSlash = true;
             superSlashDirection = Arrow.GetComponent<SlashArrowRotationScript>().GetDirection();
@@ -136,7 +134,7 @@ public class PlayerCombat : MonoBehaviour
             StartCoroutine(postProcessingEffects.flashScreen());
             Arrow.GetComponent<SpriteRenderer>().enabled = false;
             playerAnimationController.SetBool("isSlowMotion", false);
-            timeManager.RevertTime();
+            TimeManager.instance.RevertTime();
 
             if (!playerMovement.isGrounded)
             {

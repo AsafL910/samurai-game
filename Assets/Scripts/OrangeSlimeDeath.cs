@@ -15,7 +15,6 @@ public class OrangeSlimeDeath : MonoBehaviour, ICustomEvent
 	{
 		if (data == "kill")
 		{
-			Debug.Log("Orange Slime Death Triggered");
 			Instantiate(poison, transform.position, Quaternion.identity);
 			FindObjectOfType<AudioManager>().Play("PoisonStart");
 		}
