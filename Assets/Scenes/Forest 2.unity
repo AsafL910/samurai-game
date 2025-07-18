@@ -832,12 +832,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e71bb0046666a43a22a5360bafbfdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeManager: {fileID: 0}
   pauseMenuUI: {fileID: 690134109}
   healthBarFill: {fileID: 423515758}
   healthBar: {fileID: 707387931}
   Resolve: {fileID: 1948374511}
   ResolveFill: {fileID: 814435678}
+  ShurikenCount: {fileID: 0}
+  ShurikenCountIcon: {fileID: 0}
 --- !u!114 &116252508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3787,7 +3788,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7783171, y: 1}
+    m_SensorSize: {x: 20.9, y: 24}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6554,7 +6555,6 @@ MonoBehaviour:
     type: 3}
   throwSpeed: 10
   throwableSpawnDistance: 1.2
-  timeManager: {fileID: 1623860382}
   slashSpeed: 40
 --- !u!95 &869281123
 Animator:
@@ -7946,12 +7946,12 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
+  m_SensorSize: {x: 20.9, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 25.734083
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -34469,7 +34469,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7783171, y: 1}
+    m_SensorSize: {x: 20.9, y: 24}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

@@ -10,6 +10,8 @@ public class PauseMenuScript : MonoBehaviour
     public GameObject healthBar;
     public GameObject Resolve;
     public GameObject ResolveFill;
+    public GameObject ShurikenCount;
+    public GameObject ShurikenCountIcon;
     private AudioManager audioManager;
 
     public static PauseMenuScript instance;
@@ -29,23 +31,23 @@ public class PauseMenuScript : MonoBehaviour
     }
 
     private void Start()
-	{
+    {
         audioManager = FindObjectOfType<AudioManager>();
 
     }
-	private void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (pauseMenuUI.activeSelf)
-            {               
+            {
                 ResumeGame();
             }
             else
-            {            
+            {
                 PauseGame();
             }
-        }      
+        }
     }
 
     public void PauseGame()
@@ -63,19 +65,22 @@ public class PauseMenuScript : MonoBehaviour
         audioManager.ChangeVolume("Ambient Music - Mossy", 0.2f);
         pauseMenuUI.SetActive(false);
         TimeManager.instance.RevertTime();
-        setUIelements(true);  
+        setUIelements(true);
     }
     public void ResumeMainMenu()
     {
+        // ResumeGame();
         audioManager.Play("MenuButtonClick");
         SceneManager.LoadScene(0);
     }
 
-    public void setUIelements(bool flag) 
+    public void setUIelements(bool flag)
     {
         healthBar.SetActive(flag);
         healthBarFill.SetActive(flag);
         Resolve.SetActive(flag);
         ResolveFill.SetActive(flag);
+        ShurikenCount.SetActive(flag);
+        ShurikenCountIcon.SetActive(flag);
     }
 }
