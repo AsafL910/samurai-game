@@ -1827,11 +1827,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141001825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.07, y: -10.28, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1621165702}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &148502385
 PrefabInstance:
@@ -2715,7 +2715,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 834802917}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: loadPlayer
         m_Mode: 1
@@ -3757,7 +3757,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 1928063897}
   resolve: {fileID: 716262235}
-  player: {fileID: 834802917}
   glowMat: {fileID: 2100000, guid: 8a0f1c0f6b2e7db4f966050727c799ab, type: 2}
   shurikenCount: {fileID: 1324657920}
 --- !u!4 &406649744
@@ -6163,7 +6162,6 @@ GameObject:
   - component: {fileID: 834802915}
   - component: {fileID: 834802914}
   - component: {fileID: 834802912}
-  - component: {fileID: 834802917}
   - component: {fileID: 834802919}
   - component: {fileID: 834802918}
   - component: {fileID: 834802920}
@@ -6274,7 +6272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8996dbdf73f929748b97a6ede75fda89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 834802917}
   blood: {fileID: 93048970475139062, guid: bb54a54277c1deb4689214e862f2b2ab, type: 3}
   katana: {fileID: 3003627756916557406, guid: a2712d8d562968a4ba4c2994eb02bb9a, type: 3}
   gameOverScreen: {fileID: 640393671}
@@ -6317,7 +6314,6 @@ MonoBehaviour:
     m_Bits: 512
   rb: {fileID: 834802910}
   player: {fileID: 834802909}
-  playerStatus: {fileID: 834802917}
   canDoubleJump: 0
   moveDir: {x: 0, y: 0, z: 0}
   playerCollider: {fileID: 834802920}
@@ -6341,7 +6337,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 834802914}
-  playerStatus: {fileID: 834802917}
   swordOffset: 1
   swordCollider: {fileID: 1879711212}
   enemyLayer:
@@ -6362,20 +6357,6 @@ MonoBehaviour:
   throwSpeed: 10
   throwableSpawnDistance: 1.2
   slashSpeed: 40
---- !u!114 &834802917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834802907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ed1ae232fc756a49a45b4e540402277, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShurikenCount: 0
-  sawTutorial: 0
 --- !u!114 &834802918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6401,7 +6382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b181aa3f1e0a3874babcf04568d6414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 834802917}
   fillSpeed: 20
 --- !u!70 &834802920
 CapsuleCollider2D:
@@ -40280,8 +40260,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1653946545}
-  - {fileID: 141001827}
-  - {fileID: 1910132544}
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41847,7 +41825,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 834802917}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: savePlayer
         m_Mode: 1
@@ -43614,11 +43592,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910132543}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.07, y: -7.2799997, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1621165702}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1910132545
 MonoBehaviour:

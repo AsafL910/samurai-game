@@ -23,7 +23,7 @@ public class SlimeMovement : MonoBehaviour
 
         Vector2 moveDir = player.position - transform.position;
         bool isInRange = Math.Abs(moveDir.magnitude) < maxViewingDistance;
-        int mask = LayerMask.GetMask("Ground", "Player");
+        int mask = LayerMask.GetMask("Ground", "Items", "Player");
         RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDir.normalized * new Vector2(1, 0), maxViewingDistance, mask);
         if (isInRange && hit && hit.collider.CompareTag("Player"))
         {

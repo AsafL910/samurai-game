@@ -6,7 +6,7 @@ public class UpdateStatusBars : MonoBehaviour
 {
     public Image health;
     public Image resolve;
-    public PlayerStatus player;
+    private PlayerStatus player;
     public Material glowMat;
     private Material defaultMat;
     public TextMeshProUGUI shurikenCount;
@@ -23,11 +23,11 @@ public class UpdateStatusBars : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         DontDestroyOnLoad(gameObject);
     }
     private void Start()
     {
+        player = PlayerState.GetPlayerStatus();
         defaultMat = resolve.material;
     }
 

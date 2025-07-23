@@ -8,7 +8,7 @@ public class GainDoubleJump : MonoBehaviour
 
     void Start()
     {
-        gameObject.SetActive(!PlayerMovement.instance.playerStatus.CanDoubleJump());
+        gameObject.SetActive(!PlayerState.GetPlayerStatus().CanDoubleJump());
     }
     void OnTriggerEnter2D(Collider2D other)
     {

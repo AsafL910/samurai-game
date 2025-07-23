@@ -6,7 +6,7 @@ public class FinishTutorial : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            PlayerMovement.instance.playerStatus.sawTutorial = true;
+            PlayerState.GetPlayerStatus().SetSawTutorial(true);
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerStatus : MonoBehaviour
+public class PlayerStatus
 {
     private float hp;
     private float totalhp;
@@ -12,18 +12,27 @@ public class PlayerStatus : MonoBehaviour
     private bool canSuperSlash;
     private bool canHeal;
     private bool canDoubleJump;
-    private Transform positionTransform;
-    public int ShurikenCount;
+    private float posX;
+    private float posY;
+    private float posZ;
+    private int ShurikenCount;
 
-    public bool sawTutorial;
+    private bool sawTutorial;
 
-    private void Start()
+    private int sceneIndex;
+
+    public PlayerStatus()
     {
-        InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, gameObject.transform, 0);
-        //InitPlayerStatus(loadPlayer());
+
     }
 
-    public void InitPlayerStatus(float hp, float totalHp, float resolve, float totalResolve, bool canSuperSlash, bool canHeal, bool canDoubleJump, Transform positionTransform, int shurikenCount)
+    public void Start()
+    {
+        // InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, new Vector3(-37, 10, 0), 0, 1);
+        LoadPlayer();
+    }
+
+    public void InitPlayerStatus(float hp, float totalHp, float resolve, float totalResolve, bool canSuperSlash, bool canHeal, bool canDoubleJump, Vector2 positionTransform, int shurikenCount, int sceneIndex)
     {
         this.hp = hp;
         this.totalhp = totalHp;
@@ -32,8 +41,11 @@ public class PlayerStatus : MonoBehaviour
         this.canSuperSlash = canSuperSlash;
         this.canHeal = canHeal;
         this.canDoubleJump = canDoubleJump;
-        this.positionTransform = positionTransform;
+        this.posX = positionTransform.x;
+        this.posY = positionTransform.y;
+        this.posZ = 0f;
         this.ShurikenCount = shurikenCount;
+        this.sceneIndex = sceneIndex;
         sawTutorial = false;
     }
     public void InitPlayerStatus(PlayerStatus other)
@@ -45,8 +57,11 @@ public class PlayerStatus : MonoBehaviour
         this.canSuperSlash = other.canSuperSlash;
         this.canHeal = other.canHeal;
         this.canDoubleJump = other.canDoubleJump;
-        this.positionTransform = other.positionTransform;
+        this.posX = other.posX;
+        this.posY = other.posY;
+        this.posZ = other.posZ;
         this.ShurikenCount = other.ShurikenCount;
+        this.sceneIndex = other.sceneIndex;
     }
 
     public void TakeDamage(float damage)
@@ -97,14 +112,34 @@ public class PlayerStatus : MonoBehaviour
         return this.canDoubleJump;
     }
 
-    public Transform GetTransform()
+    public Vector3 GetTransform()
     {
-        return this.positionTransform;
+        return new Vector3(this.posX, this.posY, this.posZ);
     }
 
-    public void SetTransform(Transform transform)
+    public int GetSceneIndex()
     {
-        this.positionTransform = transform;
+        return this.sceneIndex;
+    }
+
+    public bool HasSeenTutorial()
+    {
+        return sawTutorial;
+    }
+
+    public void SetSawTutorial(bool value)
+    {
+        this.sawTutorial = value;
+    }
+    public void SetSceneIndex(int sceneIndex)
+    {
+        this.sceneIndex = sceneIndex;
+    }
+    public void SetTransform(Vector3 transform)
+    {
+        this.posX = transform.x;
+        this.posY = transform.y;
+        this.posZ = transform.z;
     }
 
     public void SetHP(float value)
@@ -134,14 +169,27 @@ public class PlayerStatus : MonoBehaviour
         this.canDoubleJump = value;
     }
 
-    public void savePlayer()
+    public void SavePlayer()
     {
         SaveSystem.Save(this);
     }
 
-    public PlayerStatus loadPlayer()
+    public PlayerStatus LoadPlayer()
     {
-        return SaveSystem.Load();
+        var status = SaveSystem.Load();
+        if (status == null)
+        {
+            Debug.Log("Player Status created successfully.");
+            InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, new Vector3(-37, 10, 0), 0, 1);
+            return status;
+        }
+        else
+        {
+            InitPlayerStatus(status);
+            Debug.Log("Player Status loaded successfully.");
+        }
+
+        return status;
     }
 
     public bool HasShuriken()

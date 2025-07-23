@@ -20,10 +20,9 @@ public class CameraScript : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         DontDestroyOnLoad(gameObject);
     }
-        private void LateUpdate()
+    private void LateUpdate()
     {
         Vector3 cameraPosition = playerTarget.position + offset;
         //transform.position = Vector3.SmoothDamp(transform.position, cameraPosition, velocity,);

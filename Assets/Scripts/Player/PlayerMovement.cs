@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     public Rigidbody2D rb;
     public Transform player;
-    public PlayerStatus playerStatus;
     public bool canDoubleJump;
     public Vector3 moveDir;
     public CapsuleCollider2D playerCollider;
@@ -42,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-        void Start()
+    void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
         transform.position = FindObjectOfType<GameManager>().checkpoint;
@@ -76,12 +75,12 @@ public class PlayerMovement : MonoBehaviour
                 Jump();
                 canDoubleJump = true;
             }
-            else if (canDoubleJump && playerStatus.CanDoubleJump())
+            else if (canDoubleJump && PlayerState.GetPlayerStatus().CanDoubleJump())
             {
                 Jump();
                 canDoubleJump = false;
             }
-            
+
         }
 
         JumpPhysicsFix();
@@ -118,17 +117,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-     public void Jump()
+    public void Jump()
     {
         audioManager.Play("PlayerJump");
         rb.velocity = new Vector2(rb.velocity.x, 0f);
-        rb.AddForce(Vector2.up*jumpVelocity,ForceMode2D.Impulse);
+        rb.AddForce(Vector2.up * jumpVelocity, ForceMode2D.Impulse);
     }
 
     void HorizontalMove()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal");
-        playerAnimationController.SetFloat("PlayerHorizontalSpeed", Mathf.Abs(horizontalMove));    
+        playerAnimationController.SetFloat("PlayerHorizontalSpeed", Mathf.Abs(horizontalMove));
         moveDir = new Vector3(horizontalMove, 0f).normalized;
         if (horizontalMove != 0 && isGrounded)
         {
@@ -145,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        playerStatus.SetTransform(player.transform);
+        PlayerState.GetPlayerStatus().SetTransform(player.transform.position);
     }
 
     public void FlipCharacter()
@@ -165,8 +164,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnDrawGizmos()
-    { 
+    {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.position + Vector3.down * transform.localScale.x*raySizeMultiplier);
+        Gizmos.DrawLine(transform.position, transform.position + Vector3.down * transform.localScale.x * raySizeMultiplier);
     }
 }

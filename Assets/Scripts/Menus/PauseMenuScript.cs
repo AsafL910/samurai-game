@@ -26,7 +26,6 @@ public class PauseMenuScript : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         DontDestroyOnLoad(gameObject);
     }
 
@@ -71,6 +70,7 @@ public class PauseMenuScript : MonoBehaviour
     {
         // ResumeGame();
         audioManager.Play("MenuButtonClick");
+        PlayerState.GetPlayerStatus().SavePlayer();
         SceneManager.LoadScene(0);
     }
 

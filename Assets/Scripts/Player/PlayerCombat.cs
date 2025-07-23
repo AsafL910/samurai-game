@@ -7,7 +7,7 @@ public class PlayerCombat : MonoBehaviour
     public PlayerMovement playerMovement;
     private Animator playerAnimationController;
     private Rigidbody2D rb;
-    public PlayerStatus playerStatus;
+    private PlayerStatus playerStatus;
     public float swordOffset;
     public CapsuleCollider2D swordCollider;
     public LayerMask enemyLayer;
@@ -39,6 +39,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void Start()
     {
+        playerStatus = PlayerState.GetPlayerStatus();
         audioManager = FindObjectOfType<AudioManager>();
         spriteRenderer.material = matDefault;
         isSuperSlashing = false;
@@ -237,7 +238,7 @@ public class PlayerCombat : MonoBehaviour
 
     void changeSwordPosition(Vector3 direction)
     {
-        Sword.transform.position = playerStatus.GetTransform().position;
+        Sword.transform.position = playerStatus.GetTransform();
         Sword.transform.position += direction * swordOffset;
     }
 

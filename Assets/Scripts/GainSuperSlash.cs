@@ -7,7 +7,7 @@ public class GainSuperSlash : MonoBehaviour
 
     void Start()
     {
-        gameObject.SetActive(!PlayerMovement.instance.playerStatus.CanSuperSlash());
+        gameObject.SetActive(!PlayerState.GetPlayerStatus().CanSuperSlash());
     }
     void OnTriggerEnter2D(Collider2D other)
     {

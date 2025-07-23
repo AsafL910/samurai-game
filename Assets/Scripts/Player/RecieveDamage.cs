@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class RecieveDamage : MonoBehaviour
 {
-    public PlayerStatus player;
+    private PlayerStatus player;
     public GameObject blood;
     public GameObject katana;
     public GameObject gameOverScreen;
@@ -15,6 +15,7 @@ public class RecieveDamage : MonoBehaviour
     void Start()
     {
         gameEnded = false;
+        player = PlayerState.GetPlayerStatus();
         player.FillHP();
     }
     void Update()
@@ -47,6 +48,7 @@ public class RecieveDamage : MonoBehaviour
     }
     void ShowGameOverScreen()
     {
+        Time.timeScale = 0f;
         gameOverScreen.SetActive(true);
     }
 
@@ -70,7 +72,7 @@ public class RecieveDamage : MonoBehaviour
         GetComponent<CapsuleCollider2D>().enabled = true;
         FindObjectOfType<AudioManager>().Play("Ambient Music - Mossy");
 
-        GetComponent<PlayerStatus>().FillHP();
+        PlayerState.GetPlayerStatus().FillHP();
         transform.position = checkpoint;
     }
 }

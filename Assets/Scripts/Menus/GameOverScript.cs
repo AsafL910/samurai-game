@@ -13,17 +13,24 @@ public class GameOverScript : MonoBehaviour
     public void ResumeGame()
     {
         gameOverScreen.SetActive(false);
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Restart()
     {
         gameOverScreen.SetActive(false);
+        Time.timeScale = 1f;
         GameManager.instance.Restart();
     }
 
     public static void MainMenu()
     {
+        GameObject currentCanvas = GameObject.Find("Canvas");
+        if (currentCanvas != null)
+        {
+            currentCanvas.SetActive(false);
+        } 
         SceneManager.LoadScene("Menu");
     }
 
