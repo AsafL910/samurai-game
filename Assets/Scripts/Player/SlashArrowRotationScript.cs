@@ -6,7 +6,6 @@ public class SlashArrowRotationScript : MonoBehaviour
 {
     private Vector3 direction;
     public Transform player;
-
     public static SlashArrowRotationScript instance;
     void Awake()
     {

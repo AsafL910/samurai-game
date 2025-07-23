@@ -28,9 +28,14 @@ public class PlayerStatus
 
     public void Start()
     {
-        // InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, new Vector3(-37, 10, 0), 0, 1);
         LoadPlayer();
     }
+
+    public void NewStart()
+    {
+        InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, new Vector3(-37, 10, 0), 0, 2);
+    }
+
 
     public void InitPlayerStatus(float hp, float totalHp, float resolve, float totalResolve, bool canSuperSlash, bool canHeal, bool canDoubleJump, Vector2 positionTransform, int shurikenCount, int sceneIndex)
     {
@@ -174,14 +179,13 @@ public class PlayerStatus
         SaveSystem.Save(this);
     }
 
-    public PlayerStatus LoadPlayer()
+    public void LoadPlayer()
     {
         var status = SaveSystem.Load();
         if (status == null)
         {
             Debug.Log("Player Status created successfully.");
-            InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, new Vector3(-37, 10, 0), 0, 1);
-            return status;
+            NewStart();
         }
         else
         {
@@ -189,7 +193,6 @@ public class PlayerStatus
             Debug.Log("Player Status loaded successfully.");
         }
 
-        return status;
     }
 
     public bool HasShuriken()

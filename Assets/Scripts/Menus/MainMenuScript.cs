@@ -6,15 +6,47 @@ public class MainMenuScript : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("MainMenuScript started.");
+        EnableInGameUI(false);
     }
 
     public static void PlayGame()
     {
+        SaveSystem.DeleteSave(); // Clear any existing save data
+        PlayerState.SetPlayerStatus(new PlayerStatus());
+        PlayerState.GetPlayerStatus().NewStart();
+        SceneManager.LoadScene("Forest");
+        EnableInGameUI(true);
+        GameObject pauseMenu = GameObject.Find("Pause Menu");
+        if (pauseMenu != null)
+        {
+            pauseMenu.SetActive(false);
+        }
+        Time.timeScale = 1;
+    }
+
+    public static void LoadGame()
+    {
         PlayerState.SetPlayerStatus(new PlayerStatus());
         PlayerState.GetPlayerStatus().Start();
-        SceneManager.LoadScene("Forest");
+        SceneManager.LoadScene(PlayerState.GetPlayerStatus().GetSceneIndex());
+        Debug.Log("Loading game from scene index: " + PlayerState.GetPlayerStatus().GetSceneIndex());
+        EnableInGameUI(true);
+        GameObject pauseMenu = GameObject.Find("Pause Menu");
+        if (pauseMenu != null)
+        {
+            pauseMenu.SetActive(false);
+        }
         Time.timeScale = 1;
+    }
+
+    static void EnableInGameUI(bool enable)
+    {
+        CameraScript.instance?.gameObject.SetActive(enable);
+        GameObject pauseMenu = GameObject.Find("Pause Menu");
+        if (pauseMenu != null)
+        {
+            pauseMenu.SetActive(enable);
+        }
     }
 
     public static void QuitGame()

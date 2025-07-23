@@ -22,6 +22,12 @@ public class CameraScript : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+
+    void Start()
+    {
+        instance.gameObject.SetActive(true);
+    }
+
     private void LateUpdate()
     {
         Vector3 cameraPosition = playerTarget.position + offset;

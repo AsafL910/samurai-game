@@ -32,7 +32,7 @@ public class PauseMenuScript : MonoBehaviour
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
-
+        setUIelements(true);
     }
     private void Update()
     {
