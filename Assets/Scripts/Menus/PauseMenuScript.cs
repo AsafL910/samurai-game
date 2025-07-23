@@ -70,6 +70,9 @@ public class PauseMenuScript : MonoBehaviour
     {
         // ResumeGame();
         audioManager.Play("MenuButtonClick");
+        PlayerState.GetPlayerStatus().SetTransform(GameManager.instance.checkpoint);
+        PlayerState.GetPlayerStatus().SetSceneIndex(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Resuming main menu from scene index: " + PlayerState.GetPlayerStatus().GetSceneIndex());
         PlayerState.GetPlayerStatus().SavePlayer();
         SceneManager.LoadScene(0);
     }

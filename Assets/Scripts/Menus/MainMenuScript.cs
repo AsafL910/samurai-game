@@ -28,6 +28,13 @@ public class MainMenuScript : MonoBehaviour
     {
         PlayerState.SetPlayerStatus(new PlayerStatus());
         PlayerState.GetPlayerStatus().Start();
+        Debug.Log("Loading game from checkpoint: " + PlayerState.GetPlayerStatus().GetTransform());
+        GameManager.instance.checkpoint = PlayerState.GetPlayerStatus().GetTransform();
+        if (PlayerMovement.instance != null)
+        {
+            PlayerMovement.instance.player.position = PlayerState.GetPlayerStatus().GetTransform();
+        }
+
         SceneManager.LoadScene(PlayerState.GetPlayerStatus().GetSceneIndex());
         Debug.Log("Loading game from scene index: " + PlayerState.GetPlayerStatus().GetSceneIndex());
         EnableInGameUI(true);
@@ -47,6 +54,7 @@ public class MainMenuScript : MonoBehaviour
         {
             pauseMenu.SetActive(enable);
         }
+        PauseMenuScript.instance?.setUIelements(enable);
     }
 
     public static void QuitGame()
