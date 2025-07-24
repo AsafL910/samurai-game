@@ -14,6 +14,11 @@ public class MainMenuScript : MonoBehaviour
         SaveSystem.DeleteSave(); // Clear any existing save data
         PlayerState.SetPlayerStatus(new PlayerStatus());
         PlayerState.GetPlayerStatus().NewStart();
+        GameManager.instance.checkpoint = PlayerState.GetPlayerStatus().GetTransform();
+        if (PlayerMovement.instance != null)
+        {
+            PlayerMovement.instance.player.position = PlayerState.GetPlayerStatus().GetTransform();
+        }
         SceneManager.LoadScene("Forest");
         EnableInGameUI(true);
         GameObject pauseMenu = GameObject.Find("Pause Menu");
@@ -21,6 +26,19 @@ public class MainMenuScript : MonoBehaviour
         {
             pauseMenu.SetActive(false);
         }
+
+        if (PlayerState.shouldResetPlayer)
+        {
+            Debug.Log("Resetting player state due to shouldResetPlayer flag.");
+            PlayerState.GetPlayerStatus().FillHP();
+            var rds = FindObjectOfType<RecieveDamage>();
+            if (rds != null)
+            {
+                rds.ResetState(PlayerState.GetPlayerStatus().GetTransform());
+            }
+            PlayerState.shouldResetPlayer = false;
+        }
+
         Time.timeScale = 1;
     }
 
@@ -43,6 +61,19 @@ public class MainMenuScript : MonoBehaviour
         {
             pauseMenu.SetActive(false);
         }
+
+        if (PlayerState.shouldResetPlayer)
+        {
+            Debug.Log("Resetting player state due to shouldResetPlayer flag.");
+            PlayerState.GetPlayerStatus().FillHP();
+            var rds = FindObjectOfType<RecieveDamage>();
+            if (rds != null)
+            {
+                rds.ResetState(PlayerState.GetPlayerStatus().GetTransform());
+            }
+            PlayerState.shouldResetPlayer = false;
+        }
+
         Time.timeScale = 1;
     }
 

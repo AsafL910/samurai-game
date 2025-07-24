@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class RecieveDamage : MonoBehaviour
 {
-    private PlayerStatus player;
     public GameObject blood;
     public GameObject katana;
     public GameObject gameOverScreen;
@@ -15,13 +14,14 @@ public class RecieveDamage : MonoBehaviour
     void Start()
     {
         gameEnded = false;
-        player = PlayerState.GetPlayerStatus();
-        player.FillHP();
+        PlayerState.GetPlayerStatus().FillHP();
     }
     void Update()
     {
-        if (player.GetHP() <= 0 && !gameEnded)
+        if (PlayerState.GetPlayerStatus().GetHP() <= 0 && !gameEnded && !PlayerState.shouldResetPlayer)
         {
+            Debug.Log(PlayerState.GetPlayerStatus().GetHP() + " Player HP at death." + gameEnded + "." + PlayerState.shouldResetPlayer);
+            Debug.Log("Player has died, triggering game over sequence.");
             //play death animation
             Instantiate(katana, transform.position, Quaternion.identity);
             Instantiate(blood, transform.position, Quaternion.identity);
@@ -43,7 +43,7 @@ public class RecieveDamage : MonoBehaviour
     {
         if (other.CompareTag("InstantKill"))
         {
-            player.TakeDamage(player.GetTotalHP());
+            PlayerState.GetPlayerStatus().TakeDamage(PlayerState.GetPlayerStatus().GetTotalHP());
         }
     }
     void ShowGameOverScreen()
@@ -56,12 +56,14 @@ public class RecieveDamage : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "EnemyShuriken")
         {
-            player.SetHP(player.GetHP() - 20);
+            PlayerState.GetPlayerStatus().SetHP(PlayerState.GetPlayerStatus().GetHP() - 20);
         }
     }
 
     public void ResetState(Vector3 checkpoint)
     {
+        Debug.Log("Resetting player state to checkpoint: " + checkpoint);
+
         gameEnded = false;
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<PlayerMovement>().enabled = true;
@@ -73,6 +75,7 @@ public class RecieveDamage : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Ambient Music - Mossy");
 
         PlayerState.GetPlayerStatus().FillHP();
+        Debug.Log("Player HP reset to: " + PlayerState.GetPlayerStatus().GetHP());
         transform.position = checkpoint;
     }
 }

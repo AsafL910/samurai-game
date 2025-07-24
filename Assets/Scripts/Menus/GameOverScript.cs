@@ -24,17 +24,23 @@ public class GameOverScript : MonoBehaviour
         GameManager.instance.Restart();
     }
 
-    public static void MainMenu()
+    public void MainMenu()
     {
-        GameObject currentCanvas = GameObject.Find("Canvas");
+        PlayerState.shouldResetPlayer = true; // Reset the flag for future loads
+        GameObject currentCanvas = GameObject.Find("GameOverScreen");
         if (currentCanvas != null)
         {
             currentCanvas.SetActive(false);
-        } 
-        SceneManager.LoadScene("Menu");
+        }
+
+        PlayerState.GetPlayerStatus().SetTransform(GameManager.instance.checkpoint);
+        PlayerState.GetPlayerStatus().SetSceneIndex(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Resuming main menu from scene index: " + PlayerState.GetPlayerStatus().GetSceneIndex());
+        PlayerState.GetPlayerStatus().SavePlayer();
+        SceneManager.LoadScene(0);
     }
 
-    public static void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }

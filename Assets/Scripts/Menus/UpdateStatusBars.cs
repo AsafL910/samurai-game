@@ -6,7 +6,6 @@ public class UpdateStatusBars : MonoBehaviour
 {
     public Image health;
     public Image resolve;
-    private PlayerStatus player;
     public Material glowMat;
     private Material defaultMat;
     public TextMeshProUGUI shurikenCount;
@@ -27,16 +26,15 @@ public class UpdateStatusBars : MonoBehaviour
     }
     private void Start()
     {
-        player = PlayerState.GetPlayerStatus();
         defaultMat = resolve.material;
     }
 
     void Update()
     {
-        UpdateStatusBar(health, player.GetHP(), player.GetTotalHP());
-        UpdateStatusBar(resolve, player.GetResolve(), player.GetTotalResolve());
+        UpdateStatusBar(health, PlayerState.GetPlayerStatus().GetHP(), PlayerState.GetPlayerStatus().GetTotalHP());
+        UpdateStatusBar(resolve, PlayerState.GetPlayerStatus().GetResolve(), PlayerState.GetPlayerStatus().GetTotalResolve());
 
-        if (player.GetResolve() == player.GetTotalResolve())
+        if (PlayerState.GetPlayerStatus().GetResolve() == PlayerState.GetPlayerStatus().GetTotalResolve())
         {
             resolve.material = glowMat;
         }
@@ -45,7 +43,7 @@ public class UpdateStatusBars : MonoBehaviour
             resolve.material = defaultMat;
         }
 
-        shurikenCount.text = player.GetShurikenCount().ToString();
+        shurikenCount.text = PlayerState.GetPlayerStatus().GetShurikenCount().ToString();
     }
 
     void UpdateStatusBar(Image bar, float curr, float total)

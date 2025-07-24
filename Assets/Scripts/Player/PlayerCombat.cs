@@ -7,7 +7,6 @@ public class PlayerCombat : MonoBehaviour
     public PlayerMovement playerMovement;
     private Animator playerAnimationController;
     private Rigidbody2D rb;
-    private PlayerStatus playerStatus;
     public float swordOffset;
     public CapsuleCollider2D swordCollider;
     public LayerMask enemyLayer;
@@ -39,7 +38,6 @@ public class PlayerCombat : MonoBehaviour
 
     private void Start()
     {
-        playerStatus = PlayerState.GetPlayerStatus();
         audioManager = FindObjectOfType<AudioManager>();
         spriteRenderer.material = matDefault;
         isSuperSlashing = false;
@@ -50,7 +48,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && !playerMovement.isGrounded && playerStatus.CanSuperSlash() && playerStatus.isResolveFull())
+        if (Input.GetKey(KeyCode.LeftShift) && !playerMovement.isGrounded && PlayerState.GetPlayerStatus().CanSuperSlash() && PlayerState.GetPlayerStatus().isResolveFull())
         {
             if (!audioManager.isPlaying("SlowMo") && !isReadyForSlash)
             {
@@ -82,15 +80,15 @@ public class PlayerCombat : MonoBehaviour
             StartCoroutine("Slash");
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && playerStatus.CanHeal() && playerStatus.isResolveFull())
+        if (Input.GetKeyDown(KeyCode.R) && PlayerState.GetPlayerStatus().CanHeal() && PlayerState.GetPlayerStatus().isResolveFull())
         {
             heal();
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) && playerStatus.HasShuriken())
+        if (Input.GetKeyDown(KeyCode.Q) && PlayerState.GetPlayerStatus().HasShuriken())
         {
             var shuriken = Instantiate(ShurikenPrefab);
-            playerStatus.SetShurikenCount(playerStatus.GetShurikenCount() - 1);
+            PlayerState.GetPlayerStatus().SetShurikenCount(PlayerState.GetPlayerStatus().GetShurikenCount() - 1);
             shuriken.gameObject.transform.position = transform.position + Arrow.GetComponent<SlashArrowRotationScript>().GetDirection().normalized * throwableSpawnDistance;
             shuriken.gameObject.GetComponent<Rigidbody2D>().AddForce(Arrow.GetComponent<SlashArrowRotationScript>().GetDirection().normalized * throwSpeed, ForceMode2D.Impulse);
         }
@@ -153,7 +151,7 @@ public class PlayerCombat : MonoBehaviour
             playerMovement.playerCollider.isTrigger = true;
             isReadyForSlash = false;
 
-            playerStatus.SetResolve(0f);
+            PlayerState.GetPlayerStatus().SetResolve(0f);
         }
     }
 
@@ -165,7 +163,7 @@ public class PlayerCombat : MonoBehaviour
             audioManager.Play("PlayerTakeDamage");
             EnemyStatus enemyStatus = other.gameObject.GetComponent<EnemyCombat>().enemyStatus;
             Rigidbody2D enemyRb = other.gameObject.GetComponent<Rigidbody2D>();
-            enemyStatus.HitPlayer(playerStatus);
+            enemyStatus.HitPlayer(PlayerState.GetPlayerStatus());
             StartCoroutine(flashWhite(flashDuration));
             //needs fixing - MOVE ENEMY BY TIME
             Vector3 direction3D = (transform.position - other.transform.position);
@@ -176,7 +174,7 @@ public class PlayerCombat : MonoBehaviour
         if (other.gameObject.tag == "Hazard" && !playerIsHit)
         {
             audioManager.Play("PlayerTakeDamage");
-            playerStatus.TakeDamage(30f);
+            PlayerState.GetPlayerStatus().TakeDamage(30f);
             StartCoroutine(flashWhite(flashDuration));
             Vector3 direction3D = (transform.position - other.transform.position);
             Vector2 direction = new Vector2(direction3D.x, direction3D.y).normalized;
@@ -209,7 +207,7 @@ public class PlayerCombat : MonoBehaviour
         }
         if (other.tag == "ShurikenSupply")
         {
-            playerStatus.SetShurikenCount(playerStatus.GetShurikenCount() + 10);
+            PlayerState.GetPlayerStatus().SetShurikenCount(PlayerState.GetPlayerStatus().GetShurikenCount() + 10);
             audioManager.Play("CollectAmmo");
             Destroy(other.gameObject);
         }
@@ -223,22 +221,22 @@ public class PlayerCombat : MonoBehaviour
     {
         if (other.CompareTag("Poison"))
         {
-            playerStatus.TakeDamage(Time.deltaTime * other.gameObject.GetComponent<Poison>().damage);
+            PlayerState.GetPlayerStatus().TakeDamage(Time.deltaTime * other.gameObject.GetComponent<Poison>().damage);
         }
     }
 
     private void heal()
     {
         audioManager.Play("PlayerHeal");
-        playerStatus.FillHP();
-        playerStatus.SetResolve(0f);
+        PlayerState.GetPlayerStatus().FillHP();
+        PlayerState.GetPlayerStatus().SetResolve(0f);
         GameObject healthParticles = Instantiate(healEffect, transform.position, Quaternion.identity);
         healthParticles.transform.parent = transform;
     }
 
     void changeSwordPosition(Vector3 direction)
     {
-        Sword.transform.position = playerStatus.GetTransform();
+        Sword.transform.position = PlayerState.GetPlayerStatus().GetTransform();
         Sword.transform.position += direction * swordOffset;
     }
 
