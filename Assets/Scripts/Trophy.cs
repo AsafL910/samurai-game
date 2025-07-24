@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Trophy : MonoBehaviour
 {
+
+    public TMP_Text endText;
+    public GameObject endPanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +30,10 @@ public class Trophy : MonoBehaviour
             AudioManager.instance.Play("Gong");
         }
 
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        PauseMenuScript.instance.setUIelements(false);
+        endPanel.SetActive(true);
+        endText.text += "112% of the game!";
+        TimeManager.instance.StopTime();
     }
 }
