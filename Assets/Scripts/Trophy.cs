@@ -29,10 +29,9 @@ public class Trophy : MonoBehaviour
             AudioManager.instance.Play("Gong");
         }
 
-        // Destroy(gameObject);
         PauseMenuScript.instance.setUIelements(false);
         endPanel.SetActive(true);
-        var precentage = (PlayerPrefs.GetInt("score") / PlayerPrefs.GetInt("totalscore")) * 100;
+        float precentage = ((float)PlayerPrefs.GetInt("score") / (float)PlayerPrefs.GetInt("totalscore")) * 100f;
         endText.text += $"{precentage}% of the game!";
         TimeManager.instance.StopTime();
     }

@@ -1,12 +1,21 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
+    public TMP_Text completionText;
 
     void Start()
     {
         EnableInGameUI(false);
+        if (PlayerPrefs.HasKey("score"))
+        {
+            float precentage = ((float)PlayerPrefs.GetInt("score") / (float)PlayerPrefs.GetInt("totalscore")) * 100f;
+
+            completionText.text += completionText.text + "current game completion: " + precentage + "%";
+        }
+
     }
 
     public static void PlayGame()
