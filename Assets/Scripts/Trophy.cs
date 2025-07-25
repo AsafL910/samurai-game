@@ -26,6 +26,8 @@ public class Trophy : MonoBehaviour
     {
         var endBoardScript = FindObjectOfType<EndBoardScript>();
         endPanel = endBoardScript.endPanel;
+        endText = endPanel.GetComponentInChildren<TMP_Text>();
+
         if (collision.gameObject.tag == "Player")
         {
             AudioManager.instance.Play("Gong");
@@ -34,7 +36,7 @@ public class Trophy : MonoBehaviour
         PauseMenuScript.instance.setUIelements(false);
         endPanel.SetActive(true);
         float precentage = ((float)PlayerPrefs.GetInt("score") / (float)PlayerPrefs.GetInt("totalscore")) * 100f;
-        endText.text += $"{precentage}% of the game!";
+        endText.text = $"Well done! \nYou finished\n{(int)precentage}% of the game!";
         TimeManager.instance.StopTime();
     }
 }
