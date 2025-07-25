@@ -56,6 +56,7 @@ public class PauseMenuScript : MonoBehaviour
         pauseMenuUI.SetActive(true);
         TimeManager.instance.StopTime();
         setUIelements(false);
+        GameManager.EndSessionAndSave();
     }
 
     public void ResumeGame()
@@ -65,6 +66,7 @@ public class PauseMenuScript : MonoBehaviour
         pauseMenuUI.SetActive(false);
         TimeManager.instance.RevertTime();
         setUIelements(true);
+        GameManager.StartSession();
     }
     public void ResumeMainMenu()
     {

@@ -11,9 +11,7 @@ public class MainMenuScript : MonoBehaviour
         EnableInGameUI(false);
         if (PlayerPrefs.HasKey("score"))
         {
-            float precentage = ((float)PlayerPrefs.GetInt("score") / (float)PlayerPrefs.GetInt("totalscore")) * 100f;
-
-            completionText.text += completionText.text + "current game completion: " + precentage + "%";
+            completionText.text = "Total Play time: " + GameManager.GetTotalPlayTime();
         }
 
     }
@@ -24,6 +22,7 @@ public class MainMenuScript : MonoBehaviour
         PlayerState.SetPlayerStatus(new PlayerStatus());
         PlayerState.GetPlayerStatus().NewStart();
         GameManager.instance.checkpoint = PlayerState.GetPlayerStatus().GetTransform();
+        GameManager.StartSession();
         if (PlayerMovement.instance != null)
         {
             PlayerMovement.instance.player.position = PlayerState.GetPlayerStatus().GetTransform();
@@ -55,6 +54,7 @@ public class MainMenuScript : MonoBehaviour
     {
         PlayerState.SetPlayerStatus(new PlayerStatus());
         PlayerState.GetPlayerStatus().Start();
+        GameManager.StartSession();
         Debug.Log("Loading game from checkpoint: " + PlayerState.GetPlayerStatus().GetTransform());
         GameManager.instance.checkpoint = PlayerState.GetPlayerStatus().GetTransform();
         if (PlayerMovement.instance != null)

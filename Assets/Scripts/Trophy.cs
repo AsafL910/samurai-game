@@ -31,13 +31,14 @@ public class Trophy : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             AudioManager.instance.Play("Gong");
-        }
+            GameManager.EndSessionAndSave();
 
-        PauseMenuScript.instance.setUIelements(false);
-        endPanel.SetActive(true);
-        float precentage = ((float)PlayerPrefs.GetInt("score") / (float)PlayerPrefs.GetInt("totalscore")) * 100f;
-        endText.text = $"Well done! \nYou finished\n{(int)precentage}% of the game!";
-        TimeManager.instance.StopTime();
-        SaveSystem.DeleteSave();
+            PauseMenuScript.instance.setUIelements(false);
+            endPanel.SetActive(true);
+            float precentage = ((float)PlayerPrefs.GetInt("score") / (float)PlayerPrefs.GetInt("totalscore")) * 100f;
+            endText.text = $"Well done! \nYou finished the game!\n{GameManager.GetTotalPlayTime()}";
+            TimeManager.instance.StopTime();
+            SaveSystem.DeleteSave();
+        }
     }
 }

@@ -23,6 +23,8 @@ public class RecieveDamage : MonoBehaviour
             Debug.Log(PlayerState.GetPlayerStatus().GetHP() + " Player HP at death." + gameEnded + "." + PlayerState.shouldResetPlayer);
             Debug.Log("Player has died, triggering game over sequence.");
             //play death animation
+            GameManager.EndSessionAndSave();
+
             Instantiate(katana, transform.position, Quaternion.identity);
             Instantiate(blood, transform.position, Quaternion.identity);
             gameEnded = true;

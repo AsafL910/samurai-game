@@ -54,4 +54,38 @@ public class GameManager : MonoBehaviour
 			yield return new WaitForSeconds(0.8f);
 		}
 	}
+
+	private static float sessionStartTime = -1f;
+
+    public static void StartSession()
+    {
+        sessionStartTime = Time.time;
+    }
+
+    public static void EndSessionAndSave()
+    {
+        if (sessionStartTime < 0f) return;
+
+        float sessionDuration = Time.time - sessionStartTime;
+        float totalTime = PlayerPrefs.GetFloat("totalPlayTime", 0f);
+        PlayerPrefs.SetFloat("totalPlayTime", totalTime + sessionDuration);
+        PlayerPrefs.Save();
+        Debug.Log("Total play time now: " + (totalTime + sessionDuration) + " seconds");
+    }
+
+	public static string GetTotalPlayTime()
+	{
+		float totalSeconds = PlayerPrefs.GetFloat("totalPlayTime", 0f);
+		int hours = Mathf.FloorToInt(totalSeconds / 3600);
+		int minutes = Mathf.FloorToInt(totalSeconds % 3600 / 60);
+		int seconds = Mathf.FloorToInt(totalSeconds % 60);
+		return $"{hours:D2}:{minutes:D2}:{seconds:D2}";
+	}
+	public static void ResetTotalPlayTime()
+	{
+		PlayerPrefs.DeleteKey("totalPlayTime");
+		PlayerPrefs.Save();
+		Debug.Log("Total play time has been reset.");
+	}
+
 }

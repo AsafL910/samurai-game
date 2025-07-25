@@ -44,6 +44,7 @@ public class SaveSystem : MonoBehaviour
 
     public static void DeleteSave()
     {
+        GameManager.ResetTotalPlayTime();
         string path = Application.persistentDataPath + "/player.lumer";
         if (File.Exists(path))
         {
