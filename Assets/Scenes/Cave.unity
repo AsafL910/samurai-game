@@ -1560,7 +1560,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.44176197, y: -0.34429646}
+  m_Offset: {x: 0.3546629, y: 5.034038}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1571,7 +1571,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.150301, y: 3.1206722}
+  m_Size: {x: 8.763258, y: 8.738528}
   m_EdgeRadius: 0
 --- !u!4 &194639992
 Transform:
@@ -2258,7 +2258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blood: {fileID: 93048970475139062, guid: bb54a54277c1deb4689214e862f2b2ab, type: 3}
   katana: {fileID: 3003627756916557406, guid: a2712d8d562968a4ba4c2994eb02bb9a, type: 3}
-  gameOverScreen: {fileID: 0}
+  gameOverScreen: {fileID: 96499907}
   gameEnded: 0
   deathDelay: 1
 --- !u!114 &259138531

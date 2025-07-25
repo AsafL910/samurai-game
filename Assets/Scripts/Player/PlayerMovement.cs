@@ -26,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
 
     public float playerSpeed = 5f;
 
+    public float rayLength = 0.4f;
+    public float raySpacingFactor = 1.3f;
+
     public static PlayerMovement instance;
     void Awake()
     {
@@ -47,8 +50,8 @@ public class PlayerMovement : MonoBehaviour
         transform.position = FindObjectOfType<GameManager>().checkpoint;
         gravity = rb.gravityScale;
         Debug.Log("PlayerMovement started. Player position: " + transform.position + ", checkpoint: " + FindObjectOfType<GameManager>().checkpoint);
-		ScoreManager.UpdateTotalScore("Forest");
-   
+        ScoreManager.UpdateTotalScore("Forest");
+
     }
 
     void Update()
@@ -58,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (!isGrounded)
         {
-            isGrounded = Physics2D.Raycast(transform.position, Vector2.down, Mathf.Abs(transform.localScale.x * raySizeMultiplier), groundLayer);
+            isGrounded = IsGrounded();
             playerAnimationController.SetBool("isGrounded", isGrounded);
             if (isGrounded)
             {
@@ -67,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            isGrounded = Physics2D.Raycast(transform.position, Vector2.down, Mathf.Abs(transform.localScale.x * raySizeMultiplier), groundLayer);
+            isGrounded = IsGrounded();
             playerAnimationController.SetBool("isGrounded", isGrounded);
         }
 
@@ -91,12 +94,35 @@ public class PlayerMovement : MonoBehaviour
         //ColliderFix();
     }
 
-	private void FixedUpdate()
-	{
-        if (!gameObject.GetComponent<CapsuleCollider2D>().isTrigger) {
+    bool IsGrounded()
+    {
+        var capsule = GetComponent<CapsuleCollider2D>();
+        Vector2 boundsCenter = capsule.bounds.center;
+        float width = capsule.bounds.extents.x * raySpacingFactor;
+        float y = capsule.bounds.min.y;
+
+        Vector2 left = new Vector2(boundsCenter.x - width, y);
+        Vector2 center = new Vector2(boundsCenter.x, y);
+        Vector2 right = new Vector2(boundsCenter.x + width, y);
+
+        bool grounded =
+            Physics2D.Raycast(left, Vector2.down, rayLength, groundLayer) ||
+            Physics2D.Raycast(center, Vector2.down, rayLength, groundLayer) ||
+            Physics2D.Raycast(right, Vector2.down, rayLength, groundLayer);
+        // Optional: debug visualization
+        Debug.DrawRay(left, Vector2.down * rayLength, Color.red);
+        Debug.DrawRay(center, Vector2.down * rayLength, Color.red);
+        Debug.DrawRay(right, Vector2.down * rayLength, Color.red);
+        return grounded;
+    }
+
+    private void FixedUpdate()
+    {
+        if (!gameObject.GetComponent<CapsuleCollider2D>().isTrigger)
+        {
             rb.velocity = new Vector2(moveDir.x * playerSpeed * Time.fixedDeltaTime, rb.velocity.y);
-        } 
-	}
+        }
+    }
 
     public void JumpPhysicsFix()
     {

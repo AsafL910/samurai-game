@@ -2030,7 +2030,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.77999973
+  m_Radius: 0.5
 --- !u!1 &169367190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,12 +2193,12 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 2.77
+  slowdownDistance: 1
   pickNextWaypointDist: 2
-  endReachedDistance: 1.71
+  endReachedDistance: 0
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 0
+  whenCloseToDestination: 1
   constrainInsideGraph: 0
 --- !u!114 &169367197
 MonoBehaviour:
@@ -2283,27 +2283,27 @@ PrefabInstance:
     - target: {fileID: 8760080145250331698, guid: beb176a4d466747448976c9dc3a8a583,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4177624
+      value: 2.2433255
       objectReference: {fileID: 0}
     - target: {fileID: 8760080145250331698, guid: beb176a4d466747448976c9dc3a8a583,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4177624
+      value: 2.2433255
       objectReference: {fileID: 0}
     - target: {fileID: 8760080145250331698, guid: beb176a4d466747448976c9dc3a8a583,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4177624
+      value: 2.2433255
       objectReference: {fileID: 0}
     - target: {fileID: 8760080145250331698, guid: beb176a4d466747448976c9dc3a8a583,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.8
+      value: -24.6077
       objectReference: {fileID: 0}
     - target: {fileID: 8760080145250331698, guid: beb176a4d466747448976c9dc3a8a583,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -37.95
+      value: -43.1746
       objectReference: {fileID: 0}
     - target: {fileID: 8760080145250331698, guid: beb176a4d466747448976c9dc3a8a583,
         type: 3}
@@ -5724,7 +5724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blood: {fileID: 93048970475139062, guid: bb54a54277c1deb4689214e862f2b2ab, type: 3}
   katana: {fileID: 3003627756916557406, guid: a2712d8d562968a4ba4c2994eb02bb9a, type: 3}
-  gameOverScreen: {fileID: 0}
+  gameOverScreen: {fileID: 508499075}
   gameEnded: 0
   deathDelay: 1
 --- !u!95 &834802913

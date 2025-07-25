@@ -38,5 +38,6 @@ public class Trophy : MonoBehaviour
         float precentage = ((float)PlayerPrefs.GetInt("score") / (float)PlayerPrefs.GetInt("totalscore")) * 100f;
         endText.text = $"Well done! \nYou finished\n{(int)precentage}% of the game!";
         TimeManager.instance.StopTime();
+        SaveSystem.DeleteSave();
     }
 }

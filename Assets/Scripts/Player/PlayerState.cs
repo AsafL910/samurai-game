@@ -4,6 +4,12 @@ public class PlayerState
     private static PlayerStatus playerStatus;
     public static PlayerStatus GetPlayerStatus()
     {
+        if (playerStatus == null)
+        {
+            playerStatus = new PlayerStatus();
+            playerStatus.NewStart();
+        }
+
         return playerStatus;
     }
 
