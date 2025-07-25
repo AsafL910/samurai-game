@@ -207,6 +207,7 @@ public class PlayerCombat : MonoBehaviour
         }
         if (other.tag == "ShurikenSupply")
         {
+            ScoreManager.UpdateScore(other.gameObject);
             PlayerState.GetPlayerStatus().SetShurikenCount(PlayerState.GetPlayerStatus().GetShurikenCount() + 10);
             audioManager.Play("CollectAmmo");
             Destroy(other.gameObject);

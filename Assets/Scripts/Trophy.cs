@@ -13,7 +13,6 @@ public class Trophy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -33,7 +32,8 @@ public class Trophy : MonoBehaviour
         // Destroy(gameObject);
         PauseMenuScript.instance.setUIelements(false);
         endPanel.SetActive(true);
-        endText.text += "112% of the game!";
+        var precentage = (PlayerPrefs.GetInt("score") / PlayerPrefs.GetInt("totalscore")) * 100;
+        endText.text += $"{precentage}% of the game!";
         TimeManager.instance.StopTime();
     }
 }

@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
 		yield return new WaitForSeconds(0.4f);
 		SceneManager.LoadSceneAsync(scene);
 		sceneTransitionAnimation.SetTrigger("Start");
+		ScoreManager.UpdateTotalScore(scene);
 		if (adjustedPosition != null && adjustedPosition != Vector3.zero)
 		{
 			yield return new WaitForSeconds(0.8f);

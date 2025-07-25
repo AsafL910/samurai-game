@@ -34,6 +34,7 @@ public class EnemyCombat : MonoBehaviour
     {
         if (enemyStatus.hitpoints <= 0f)
         {
+            ScoreManager.UpdateScore(gameObject);
             ripplePostProcessor.Ripple();
             // cameraShake.GetComponent<CameraShake>().Shake();
             //fIX

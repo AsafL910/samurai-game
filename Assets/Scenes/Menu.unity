@@ -156,7 +156,6 @@ Transform:
   - {fileID: 1546914376}
   - {fileID: 1837712344}
   - {fileID: 834287176}
-  - {fileID: 805956082}
   - {fileID: 814649776}
   - {fileID: 816829075}
   m_Father: {fileID: 1192766189}
@@ -1175,15 +1174,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805956081}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.5417635}
-  m_LocalScale: {x: 0.32, y: 0.38, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 58882324}
-  m_RootOrder: 4
+  m_Father: {fileID: 816829075}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 221.3, y: -34.5}
+  m_AnchoredPosition: {x: -61.250015, y: 91.84209}
   m_SizeDelta: {x: 402.1327, y: 75.1918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &805956083
@@ -1314,7 +1313,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.49999997, z: 1}
   m_Children: []
   m_Father: {fileID: 58882324}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1448,9 +1447,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2.5417635}
   m_LocalScale: {x: 0.32, y: 0.38, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 805956082}
   m_Father: {fileID: 58882324}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Made By Asaf Lumer
+  m_text: Made By Asaf Lumer And Rony Lamm
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}

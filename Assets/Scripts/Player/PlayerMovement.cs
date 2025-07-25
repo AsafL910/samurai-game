@@ -47,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
         transform.position = FindObjectOfType<GameManager>().checkpoint;
         gravity = rb.gravityScale;
         Debug.Log("PlayerMovement started. Player position: " + transform.position + ", checkpoint: " + FindObjectOfType<GameManager>().checkpoint);
+		ScoreManager.UpdateTotalScore("Forest");
+   
     }
 
     void Update()
