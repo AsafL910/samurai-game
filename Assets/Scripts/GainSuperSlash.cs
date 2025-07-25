@@ -13,7 +13,7 @@ public class GainSuperSlash : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerStatus>().SetCanSuperSlash(true);
+            PlayerState.GetPlayerStatus().SetCanSuperSlash(true);
             SuperSlashTutorialMessage.SetActive(true);
             DoubleJumpTutorialMessage.SetActive(false);
             AudioManager.instance.Play("GainAbility");

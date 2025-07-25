@@ -14,7 +14,7 @@ public class GainDoubleJump : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerStatus>().SetCanDoubleJump(true);
+            PlayerState.GetPlayerStatus().SetCanDoubleJump(true);
             DoubleJumpTutorialMessage.SetActive(true);
             AudioManager.instance.Play("GainAbility");
             Destroy(gameObject);

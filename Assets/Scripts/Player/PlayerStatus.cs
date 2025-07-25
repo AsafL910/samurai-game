@@ -33,7 +33,7 @@ public class PlayerStatus
 
     public void NewStart()
     {
-        InitPlayerStatus(300f, 300f, 0f, 100f, true, true, true, new Vector3(-37, 10, 0), 0, 2);
+        InitPlayerStatus(300f, 300f, 0f, 100f, false, true, false, new Vector3(-37, 10, 0), 0, 2);
     }
 
 
