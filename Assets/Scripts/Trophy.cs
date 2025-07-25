@@ -24,6 +24,8 @@ public class Trophy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        var endBoardScript = FindObjectOfType<EndBoardScript>();
+        endPanel = endBoardScript.endPanel;
         if (collision.gameObject.tag == "Player")
         {
             AudioManager.instance.Play("Gong");
